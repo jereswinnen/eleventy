@@ -1,0 +1,44 @@
+// =======================================================================
+// Typography
+// =======================================================================
+
+// Body
+body {
+   font-family: $ff-sans-serif;
+   @include font-size($body-font-sizes);
+   color: $c-neutral--darkest;
+}
+
+// Headings
+h1, .c-article__lede, .c-blockquote__text, .c-article__tagline {
+   margin-bottom: $u-spacer--s;
+   font-family: $ff-serif;
+   @include font-size($h1-font-sizes);
+   color: white;
+   letter-spacing: -0.035545rem;
+}
+h2 {
+   margin-bottom: $u-spacer;
+   @include font-size($h2-font-sizes);
+   color: $c-neutral--darkest;
+   letter-spacing: -0.016743rem;
+}
+h3 {
+   margin-bottom: $u-spacer--m;
+   @include font-size($h3-font-sizes);
+   color: $c-neutral--darkest;
+   text-transform: uppercase;
+   letter-spacing: 0.07892rem;
+}
+small {
+   @include font-size($small-font-sizes);
+}
+blockquote {
+   margin: 0;
+   .c-blockquote__text {
+      color: $c-neutral--darkest;
+   }
+}
+cite, .c-blockquote__author {
+   font-style: normal;
+}

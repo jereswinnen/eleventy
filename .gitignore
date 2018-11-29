@@ -1,0 +1,6 @@
+# Files to ignore
+.DS_Store
+config.codekit3
+
+# Folders to ignore
+www

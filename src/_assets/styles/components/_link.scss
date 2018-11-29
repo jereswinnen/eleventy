@@ -1,0 +1,12 @@
+// =======================================================================
+// Links
+// =======================================================================
+
+a {
+   color: currentColor;
+   text-decoration: underline;
+   &:hover {
+      color: currentColor;
+      text-decoration: none;
+   }
+}

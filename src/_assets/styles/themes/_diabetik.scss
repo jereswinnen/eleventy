@@ -1,0 +1,13 @@
+// =======================================================================
+// Diabetik theme
+// =======================================================================
+
+.t--diabetik {
+   ::selection {
+      color: $c-neutral--darkest;
+   }
+	body {
+		color: white;
+      background: $c-neutral--darkest;
+	}
+}

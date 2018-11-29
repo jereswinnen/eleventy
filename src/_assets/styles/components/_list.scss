@@ -1,0 +1,80 @@
+// =======================================================================
+// Lists
+// =======================================================================
+
+.c-list {
+   padding: 0;
+   list-style: none;
+   .c-list__item {
+      margin-bottom: $u-spacer--s;
+   }
+}
+.c-list--projects {
+   .c-list__item {
+      margin-bottom: $u-spacer--l;
+      &:last-child {
+         margin-bottom: 0;
+      }
+      a {
+         display: block;
+         text-decoration: none;
+         background: $c-neutral--light;
+         box-shadow: $s-layerone;
+         transition: all .4s $t-bezier;
+         &:hover {
+            box-shadow: $s-layertwo;
+            transform: translateY(-4px);
+            .c-figure img {
+               transform: scale(1.05);
+            }
+            b {
+               transform: translateX(8px);
+               svg {
+                  opacity: 1;
+                  transform: translateX(6px);
+               }
+            }
+         }
+         &:active {
+            box-shadow: $s-layerone;
+            transform: none;
+         }
+         .c-figure {
+            margin-bottom: 0;
+            background: white;
+            overflow: hidden;
+            img {
+               margin-bottom: -$u-spacer;
+               transition: all 1.8s $t-bezier;
+            }  
+         }
+         aside {
+            padding: $u-spacer--s $u-spacer--m;
+            b {
+               display: flex;
+               align-items: baseline;
+               transition: all .4s $t-bezier;
+               svg {
+                  display: block;
+                  opacity: 0;
+                  fill: currentColor;
+                  transition: all .4s $t-bezier;  
+               }
+            }
+            p {
+               margin-bottom: 0;
+            }
+         }
+      }
+      @media(min-width: map-get($breakpoints, medium)) {
+         &:nth-child(even) {
+            transform: translateY(50px);
+         }
+      }
+      @media(min-width: map-get($breakpoints, large)) {
+         &:nth-child(even) {
+            //transform: translateY(100px);
+         }
+      }
+   }
+}

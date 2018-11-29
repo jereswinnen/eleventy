@@ -1,0 +1,13 @@
+// =======================================================================
+// Hocus Focus theme
+// =======================================================================
+
+.t--hocusfocus {
+   ::selection {
+      color: $c-neutral--darkest;
+   }
+	body {
+		color: white;
+      background: $c-neutral--darkest;
+	}
+}
