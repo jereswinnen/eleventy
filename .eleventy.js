@@ -7,7 +7,7 @@ module.exports = function(eleventyConfig) {
          input: 'src',
          output: 'www',
          includes: '_includes',
-         //data: '_data'
+         data: '_data'
       },
       templateFormats: ['liquid', 'md'],
       passthroughFileCopy: true
