@@ -5,6 +5,7 @@
 // Masthead Modal + Toggle
 var masthead = document.querySelector('.c-masthead');
 var mastheadToggle = document.querySelector('.c-masthead__toggle');
+var mastheadContent = document.querySelector('.c-masthead__content');
 
 var toggleClick = function toggleClick(e) {
    e.preventDefault();

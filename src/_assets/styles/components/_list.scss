@@ -6,12 +6,12 @@
    padding: 0;
    list-style: none;
    .c-list__item {
-      margin-bottom: $u-spacer--s;
+      margin-bottom: $u-spacer--15;
    }
 }
 .c-list--projects {
    .c-list__item {
-      margin-bottom: $u-spacer--l;
+      margin-bottom: $u-spacer--30;
       &:last-child {
          margin-bottom: 0;
       }
@@ -22,7 +22,6 @@
          box-shadow: $s-layerone;
          transition: all .4s $t-bezier;
          &:hover {
-            box-shadow: $s-layertwo;
             transform: translateY(-4px);
             .c-figure img {
                transform: scale(1.05);
@@ -49,7 +48,7 @@
             }  
          }
          aside {
-            padding: $u-spacer--s $u-spacer--m;
+            padding: $u-spacer--15 $u-spacer--20;
             b {
                display: flex;
                align-items: baseline;

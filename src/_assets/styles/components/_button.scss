@@ -2,9 +2,9 @@
 // Primary & secondary calls to action
 // =======================================================================
 .c-button {
-   padding: $u-spacer--xs $u-spacer--s;
+   padding: $u-spacer--10 $u-spacer--15;
    background: white;
-   border-radius: $u-radius--xs;
+   border-radius: $u-spacer--10;
    box-shadow: $s-layerone;
    transition: all .4s $t-bezier;
    &:hover {

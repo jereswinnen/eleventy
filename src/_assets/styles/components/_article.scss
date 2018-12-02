@@ -3,20 +3,20 @@
 // =======================================================================
 
 .c-article {
-   margin-bottom: $u-spacer--xl;
+   margin-bottom: $u-spacer--40;
    .c-article__header {
       .c-article__title, .c-article__tagline {
          text-align: center;
       }
    }
    .c-article__body {
-      margin-bottom: $u-spacer--l;
+      margin-bottom: $u-spacer--30;
    }
    .c-article__aside {
-      padding: $u-spacer--m;
+      padding: $u-spacer--20;
       background: $c-neutral--faintdark;
       dd {
-         margin: 0 0 $u-spacer--s 0;
+         margin: 0 0 $u-spacer--15 0;
          &:last-child {
             margin: 0;
          }

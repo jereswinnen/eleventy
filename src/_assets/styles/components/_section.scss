@@ -3,10 +3,9 @@
 // =======================================================================
 
 .c-section {
-   margin-bottom: $u-spacer--2xl;
+   margin-bottom: $u-spacer--50;
 }
 .c-section--faintdark {
-   //padding: $u-spacer--l $u-spacer--m;
    background: $c-neutral--faintdark;
    .c-article {
       margin-bottom: 0;
@@ -29,7 +28,7 @@
    }
    .c-figure {
       flex: 0 0 auto;
-      margin-right: $u-spacer--m;
+      margin-right: $u-spacer--20;
       margin-bottom: 0;
       img {
          max-height: 50vh;
@@ -37,6 +36,6 @@
       }
    }
    @media(min-width: map-get($breakpoints, medium)) {
-      padding: $u-spacer--xl 0;
+      padding: $u-spacer--40 0;
    }
 }

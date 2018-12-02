@@ -8,47 +8,41 @@ $ff-serif: "RcL", Arial, serif;
 
 /// Spacers
 $u-spacer: 5px;
-$u-spacer--xs: $u-spacer * 2; //10px
-$u-spacer--s: $u-spacer * 3; //15px
-$u-spacer--m: $u-spacer * 4; //20px
-$u-spacer--l: $u-spacer * 8; //40px
-$u-spacer--xl: $u-spacer * 10; //50px
-$u-spacer--2xl: $u-spacer * 12; //60px
-$u-spacer--3xl: $u-spacer * 16; //80px
-$u-spacer--4xl: $u-spacer * 20; //100px
+$u-spacer--10: $u-spacer * 2;
+$u-spacer--15: $u-spacer * 3;
+$u-spacer--20: $u-spacer * 4;
+$u-spacer--30: $u-spacer * 6;
+$u-spacer--40: $u-spacer * 8;
+$u-spacer--50: $u-spacer * 10;
+$u-spacer--60: $u-spacer * 12;
+$u-spacer--80: $u-spacer * 16;
+$u-spacer--100: $u-spacer * 20;
 
 ///Radii
-$u-radius--xs: 3px;
-$u-radius--s: 6px;
-$u-radius--m: 10px;
-$u-radius--l: 16px;
+$u-radius--3: 3px;
+$u-radius--6: 6px;
+$u-radius--10: 10px;
+$u-radius--16: 16px;
 
 /// Colours
 $c-neutral--faintlight: transparentize($color: #fff, $amount: 0.92);
-$c-neutral--lightest: #f0f0f0;
-$c-neutral--light: #ccc;
-$c-neutral--mid: #adadad;
-$c-neutral--darkest: #1a1a1a;
+$c-neutral--lightest: #e4e5e5;
+$c-neutral--light: #e0e2e2;
+$c-neutral--mid: #8c8b85;
+$c-neutral--darkest: #212928;
 $c-neutral--faintdark: transparentize($color: $c-neutral--darkest, $amount: 0.92);
 
-$c-shelf--lightest: #fadce8;
 $c-shelf: #eb4b89;   
-$c-realo--lightest: #d9defc;
 $c-realo: #556dfa;
-$c-hocusfocus--lightest: #e2dcfa;
 $c-hocusfocus: #947bff;
-$c-diabetik--lightest: #dcf9fa;
 $c-diabetik: #55c2c5;
-$c-immobrown--lightest: #faeedc;
 $c-immobrown: #ecb968;
 
 /// Transitions
-//$t-bezier: cubic-bezier(.455, .03, .515, .955);
 $t-bezier: cubic-bezier(.165, .84, .44, 1);
 
 /// Shadows
-$s-layerone: 0 0 2px transparentize($color: $c-neutral--darkest, $amount: 0.9), 0 6px 15px transparentize($color: $c-neutral--darkest, $amount: 0.9);
-$s-layertwo: 0 5px 15px transparentize($color: $c-neutral--darkest, $amount: 0.9), 0 15px 35px transparentize($color: $c-neutral--darkest, $amount: 0.93);
+$s-layerone: 0 1px 5px transparentize($color: $c-neutral--darkest, $amount: 0.9), 0 12px 30px transparentize($color: $c-neutral--darkest, $amount: 0.82);
 
 /// Maps
 // Breakpoints

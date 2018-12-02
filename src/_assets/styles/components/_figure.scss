@@ -3,16 +3,16 @@
 // =======================================================================
 
 .c-figure {
-   margin-bottom: $u-spacer--xl;
+   margin-bottom: $u-spacer--40;
    figcaption {
       color: currentColor;
    }
 }
 .c-figure--bg {
-   padding-bottom: $u-spacer--m;
+   padding-bottom: $u-spacer--20;
    background: white;
    figcaption {
-      padding: 0 $u-spacer--m;
+      padding: 0 $u-spacer--20;
       text-align: center;
    }
 }
