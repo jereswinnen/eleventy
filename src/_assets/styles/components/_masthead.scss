@@ -72,13 +72,15 @@
       height: 100%;
       overflow: auto;
       z-index: 22;
-      opacity: 0;
       background: $c-neutral--light;
+      opacity: 0;
       pointer-events: none;
-      transition: all .2s $t-bezier;
+      transition: all .4s $t-bezier;
+      transform: translateY(-30px);
    }
    &--open .c-masthead__content {
       opacity: 1;
       pointer-events: auto;
+      transform: translateY(0);
    }   
 }
