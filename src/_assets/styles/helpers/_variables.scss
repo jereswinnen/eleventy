@@ -6,6 +6,11 @@
 $ff-sans-serif: "NhU", "BlinkMacSystemFont", -apple-system, "Helvetica Neue", Helvetica, sans-serif;
 $ff-serif: "RcL", Arial, serif;
 
+/// Layout sizing
+$ls-column: 4.375em;
+$ls-gap--s: 3vw;
+$ls-gap: 5vw;
+
 /// Spacers
 $u-spacer: 5px;
 $u-spacer--10: $u-spacer * 2;
@@ -49,8 +54,8 @@ $s-layerone: 0 1px 5px transparentize($color: $c-neutral--darkest, $amount: 0.9)
 $breakpoints: (
    //small: 360px,
    medium: 700px,
-   large: 1040px,
-   xlarge: 1280px
+   large: 1280px,
+   xlarge: 1440px
 );
 // Font sizes
 $body-font-sizes: (

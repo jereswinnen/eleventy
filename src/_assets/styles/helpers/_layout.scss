@@ -5,27 +5,32 @@
 html {
    body {
       padding: 0 $u-spacer--30;
-      .c-masthead {
-         position: sticky;
-         top: 0;
-      }
    }
    @media(min-width: map-get($breakpoints, medium)) {
+      &:before {
+         content: 'medium';
+         font-family: $ff-sans-serif;
+         color: red;
+      }
       body {
          padding: 0;
       }
       .o-grid {
          display: grid;
-         grid-column-gap: 2.5vw;
-         grid-template-columns: [bleed-start] 1fr [extend-start] minmax(0, 4.375em) [content-extra-large-start] minmax(0, 4.375em) [content-large-start] minmax(0, 4.375em) [content-small-start] repeat(4, minmax(0, 4.375em)) [content-small-end] minmax(0, 4.375em) [content-large-end] minmax(0, 4.375em) [content-extra-large-end] minmax(0, 4.375em) [extend-end] 1fr [bleed-end];
+         grid-column-gap: $ls-gap;
+         grid-template-columns: [bleed-start] 1fr [extend-start] minmax(0, $ls-column) [content-extra-large-start] minmax(0, $ls-column) [content-large-start] minmax(0, $ls-column) [content-small-start] repeat(4, minmax(0, $ls-column)) [content-small-end] minmax(0, $ls-column) [content-large-end] minmax(0, $ls-column) [content-extra-large-end] minmax(0, $ls-column) [extend-end] 1fr [bleed-end];
          .c-masthead {
-            grid-column: content-large;
+            grid-column: extend;
          }
          .c-main {
             display: grid;
             grid-column: bleed;
             grid-template-columns: inherit;
             grid-column-gap: inherit;
+            * {
+               margin-bottom: $u-spacer--30;
+               background: $c-neutral--light;
+            }
             .o-grid__small {
                grid-column: content-small;
             }
@@ -44,7 +49,7 @@ html {
             .o-grid__abreast {
                display: grid;
                grid-column: extend;
-               grid-column-gap: 2.5vw;
+               grid-column-gap: $ls-gap;
                grid-template-columns: repeat(2, 1fr);
             }
             .o-grid__asymmetric {
@@ -63,8 +68,13 @@ html {
       }
    }
    @media(min-width: map-get($breakpoints, large)) {
-      .o-grid, .o-grid .c-main .o-grid__abreast {
-         grid-column-gap: 3vw;
+      &:before {
+         content: 'large';
+         font-family: $ff-sans-serif;
+         color: red;
+      }
+      .o-grid {
+         grid-column-gap: $ls-gap--s;
       }
    }
 }
