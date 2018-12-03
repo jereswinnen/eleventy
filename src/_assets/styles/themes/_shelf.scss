@@ -2,12 +2,6 @@
 // Shelf theme
 // =======================================================================
 
-.t--shelf {
-   ::selection {
-      color: $c-neutral--darkest;
-   }
-	body {
-		color: white;
-      background: $c-neutral--darkest;
-	}
+.c-figure.c-figure--contained.t--shelf {
+   background: $c-shelf--main;
 }

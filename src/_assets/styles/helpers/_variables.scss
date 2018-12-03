@@ -37,14 +37,17 @@ $c-neutral--mid: #8c8b85;
 $c-neutral--darkest: #212928;
 $c-neutral--faintdark: transparentize($color: $c-neutral--darkest, $amount: 0.92);
 
-$c-shelf: #eb4b89;   
-$c-realo: #556dfa;
-$c-hocusfocus: #947bff;
-$c-diabetik: #55c2c5;
-$c-immobrown: #ecb968;
+$c-diabetik--main: yellow;
+$c-helpper--main: red;
+$c-hocusfocus--main: blue;
+$c-immobrown--main: green;
+$c-realo--main: pink;
+$c-scorecard--main: orange;
+$c-shelf--main: #a899c9;
 
 /// Transitions
 $t-bezier: cubic-bezier(.165, .84, .44, 1);
+$t-delay: 80ms;
 
 /// Shadows
 $s-layerone: 0 1px 5px transparentize($color: $c-neutral--darkest, $amount: 0.9), 0 12px 30px transparentize($color: $c-neutral--darkest, $amount: 0.82);
@@ -74,6 +77,6 @@ $h2-font-sizes: (
    medium: (1.25rem, 1.5) //20px
 );
 $h3-font-sizes: (
-   null: (0.75rem, 1.5), //12px   
-   medium: (0.875rem, 1.5) //14px
+   null: (0.75rem, 1.5) //12px   
+   //medium: (0.875rem, 1.5) //14px
 );
