@@ -77,7 +77,6 @@ body {
   font-feature-settings: "calt", "liga", "hist", "onum", "pnum";
   hypens: auto; }
   body.no-scroll {
-    position: fixed;
     overflow: hidden; }
 
 article, aside, footer, header, main, nav, section {
