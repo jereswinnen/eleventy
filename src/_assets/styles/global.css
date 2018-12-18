@@ -15,6 +15,12 @@
   font-style: normal;
   src: url("/_assets/fonts/RcL-md-2018-07-13.woff2") format("woff2"), url("/_assets/fonts/RcL-md-2018-07-13.woff") format("woff"); }
 
+@font-face {
+  font-family: RcL;
+  font-weight: bold;
+  font-style: normal;
+  src: url("/_assets/fonts/RcL-bd-2018-12-18.woff2") format("woff2"), url("/_assets/fonts/RcL-bd-2018-12-18.woff") format("woff"); }
+
 :root {
   --c-main-faintlight: #fff;
   --c-main-lightest: #e4e5e5;
@@ -238,7 +244,8 @@ h1 {
   font-size: var(--f-size-h1);
   line-height: var(--f-leading-tight); }
   h1 em {
-    font-weight: bold; }
+    font-weight: bold;
+    font-style: normal; }
 
 h2 {
   margin-bottom: var(--u-spacer);
