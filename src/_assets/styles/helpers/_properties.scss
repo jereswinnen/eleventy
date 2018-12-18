@@ -1,0 +1,73 @@
+// =======================================================================
+// Custom Properties
+// =======================================================================
+
+:root {
+   /// Colour
+   --c-main-faintlight: #fff;
+   --c-main-lightest: #e4e5e5;
+   --c-main-light: #e0e2e2;
+   --c-main-mid: #8c8b85;
+   --c-main-darkest: #212928;
+   --c-main-faintdark: #000;
+
+   --c-diabetik: yellow;
+   --c-diabetik-darkest: yellow;
+   --c-helpper: red;
+   --c-helpper-darkest: red;
+   --c-hocusfocus: blue;
+   --c-hocusfocus-darkest: blue;
+   --c-immobrown: green;
+   --c-immobrown-darkest: green;
+   --c-realo: pink;
+   --c-realo-darkest: pink;
+   --c-scorecard: orange;
+   --c-scorecard-darkest: orange;
+   --c-shelf: #a899c9;
+   --c-shelf-darkest: #a899c9;
+
+   /// Typography
+   --f-family-sans: "NhU", "BlinkMacSystemFont", -apple-system, "Helvetica Neue", Helvetica, sans-serif;
+   --f-family-serif: "RcL", Arial, Georgia, serif;
+
+   --f-size-body: calc(1rem + 0.425vmin);
+   --f-size-body-small: calc(1rem - 0.25vmin);
+   --f-size-body-large: 1.125rem; //18px base size
+
+   --f-size-h1: calc(2.5rem + 1.45vw); //needs to be much bigger at larger vwprts
+   --f-size-h2: calc(1.375rem + 1vw);
+   --f-size-h3: calc(1.75rem + 0.25vw);
+   --f-size-h4: calc(1.125rem + 0.25vw);
+   --f-size-h5: 0.75rem;
+   --f-size-blockquote: var(--f-size-h3);
+
+   --f-leading-tight: 1.25em;
+   --f-leading: 1.5em;
+
+   /// Units
+   --u-spacer: 5px;
+   --u-spacer-10: calc(var(--u-spacer) * 2);
+   --u-spacer-15: calc(var(--u-spacer) * 3);
+   --u-spacer-20: calc(var(--u-spacer) * 4);
+   --u-spacer-30: calc(var(--u-spacer) * 6);
+   --u-spacer-40: calc(var(--u-spacer) * 8);
+   --u-spacer-50: calc(var(--u-spacer) * 10);
+   --u-spacer-60: calc(var(--u-spacer) * 12);
+   --u-spacer-80: calc(var(--u-spacer) * 16);
+   --u-spacer-100: calc(var(--u-spacer) * 20);
+
+   --u-layout-column: 4.375em;
+   --u-layout-gap-small: 3vw;
+   --u-layout-gap: 5vw;
+
+   --u-layout-viewport-medium: 44em; //704px
+   --u-layout-viewport-large: 80em; //1280px
+   --u-layout-viewport-largest: 90em; //1440px
+
+   /// Animation
+   --t-bezier: cubic-bezier(.165, .84, .44, 1);
+   --t-delay: 80ms;
+
+   /// Depth
+   --d-layer-one: 0 1px 5px transparentize($color: var(--c-main-darkest), $amount: 0.9), 0 12px 30px transparentize($color: var(--c-main-darkest), $amount: 0.82);
+}

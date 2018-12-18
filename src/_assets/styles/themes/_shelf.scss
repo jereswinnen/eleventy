@@ -8,8 +8,8 @@ body.t--shelf:before {
    width: 100%;
    height: 160px;
    content: '';
-   background: $c-shelf--main;
+   background: var(--c-shelf);
 }
 .c-figure.c-figure--contained.t--shelf {
-   background: $c-shelf--main;
+   background: var(--c-shelf);
 }

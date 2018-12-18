@@ -3,39 +3,5 @@
 // =======================================================================
 
 .c-section {
-   margin-bottom: $u-spacer--50;
-}
-.c-section--faintdark {
-   background: $c-neutral--faintdark;
-   .c-article {
-      margin-bottom: 0;
-      .c-article__lede {
-         color: $c-neutral--darkest;
-      }
-   }
-}
-.c-section--quote {
-   text-align: center;
-}
-.c-section--scroller {
-   display: flex;
-   align-items: baseline;
-   overflow-x: auto;
-   flex-wrap: nowrap;
-   -webkit-overflow-scrolling: touch;
-   &::-webkit-scrollbar {
-      display: none;
-   }
-   .c-figure {
-      flex: 0 0 auto;
-      margin-right: $u-spacer--20;
-      margin-bottom: 0;
-      img {
-         max-height: 50vh;
-         width: auto;
-      }
-   }
-   @media(min-width: map-get($breakpoints, medium)) {
-      padding: $u-spacer--40 0;
-   }
+   margin-bottom: var(--u-spacer-50);
 }

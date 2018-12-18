@@ -4,40 +4,60 @@
 
 // Body
 body {
-   font-family: $ff-sans-serif;
-   @include font-size($body-font-sizes);
-   color: $c-neutral--darkest;
+   font-family: var(--f-family-sans);
+   font-size: var(--f-size-body);
+   line-height: var(--f-leading);
+   color: var(--c-main-darkest);
 }
 
 // Headings
-h1, .c-article__lede, .c-blockquote__text, .c-article__tagline {
-   margin-bottom: $u-spacer--15;
-   font-family: $ff-serif;
-   @include font-size($h1-font-sizes);
-   color: white;
-   letter-spacing: -0.035545rem;
+h1 {
+   margin-bottom: var(--u-spacer-15);
+   font-family: var(--f-family-serif);
+   font-size: var(--f-size-h1);
+   line-height: var(--f-leading-tight);
+   //letter-spacing: -0.035545rem;
+   em {
+      font-weight: bold; //Recoleta Bold
+   }
 }
 h2 {
-   margin-bottom: $u-spacer;
-   @include font-size($h2-font-sizes);
-   color: $c-neutral--darkest;
+   margin-bottom: var(--u-spacer);
+   font-size: var(--f-size-h2);
+   color: var(--c-main-darkest);
    letter-spacing: -0.016743rem;
 }
 h3 {
-   margin-bottom: $u-spacer--20;
-   @include font-size($h3-font-sizes);
-   color: $c-neutral--darkest;
-   font-weight: 500;
-   text-transform: uppercase;
-   letter-spacing: 0.07892rem;
+   margin-bottom: var(--u-spacer);
+   font-family: var(--f-family-serif);
+   font-size: var(--f-size-h3);
+   color: var(--c-main-darkest);
+   font-weight: bold;
 }
-small {
-   @include font-size($small-font-sizes);
+h4 {
+   margin-bottom: var(--u-spacer);
+   font-size: var(--f-size-h4);
+   color: currentColor;
+   font-weight: 600;
+   .c-article--lede {
+      font-weight: regular;
+   }
+}
+h5 {
+   margin-bottom: var(--u-spacer-20);
+   font-size: var(--f-size-h5);
+   color: var(--c-main-mid);
+   text-transform: uppercase;
+   letter-spacing: 0.125rem;
+}
+small, figcaption p {
+   font-size: var(--f-size-body-small);
+   line-height: var(--f-leading);
 }
 blockquote {
-   margin: 0;
+   //margin: 0;
    .c-blockquote__text {
-      color: $c-neutral--darkest;
+      color: var(--c-main-darkest);
    }
 }
 cite, .c-blockquote__author {
@@ -46,5 +66,5 @@ cite, .c-blockquote__author {
 
 // Misc.
 .c-masthead__content .c-nav .c-nav__items .c-nav__item a {
-   font-family: $ff-serif;
+   font-family: var(--f-family-serif);
 }

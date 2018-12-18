@@ -3,8 +3,8 @@
 // =======================================================================
 
 .c-footer {
-   margin-bottom: $u-spacer--20;
-   padding-top: $u-spacer;
-   color: $c-neutral--darkest;
-   border-top: 1px solid $c-neutral--darkest;
+   margin-bottom: var(--u-spacer-20);
+   padding-top: var(--u-spacer);
+   color: var(--c-main-darkest);
+   border-top: 1px solid var(--c-main-darkest);
 }

@@ -34,7 +34,7 @@ textarea {
    overflow: auto;
 }
 ::placeholder {
-   color: var(--c-meta);
+   color: var(--c-main-light);
 }
 :focus::placeholder {
    opacity: 0.5;

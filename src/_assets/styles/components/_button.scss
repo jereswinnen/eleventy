@@ -2,11 +2,10 @@
 // Primary & secondary calls to action
 // =======================================================================
 .c-button {
-   padding: $u-spacer--10 $u-spacer--15;
+   padding: var(--u-spacer-10) var(--u-spacer-15);
    background: white;
-   border-radius: $u-spacer--10;
-   box-shadow: $s-layerone;
-   transition: all .4s $t-bezier;
+   box-shadow: var(--d-layer-one);
+   transition: all .4s var(--t-bezier);
    &:hover {
       transform: translateY(-2px);
    }

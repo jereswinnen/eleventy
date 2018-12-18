@@ -4,16 +4,16 @@
 
 html {
    body {
-      padding: 0 $u-spacer--30;
+      padding: 0 var(--u-spacer-30);
    }
-   @media(min-width: map-get($breakpoints, medium)) {
+   @media(min-width: 44em) {
       body {
          padding: 0;
       }
       .o-grid {
          display: grid;
-         grid-column-gap: $ls-gap;
-         grid-template-columns: [bleed-start] 1fr [extend-start] minmax(0, $ls-column) [content-extra-large-start] minmax(0, $ls-column) [content-large-start] minmax(0, $ls-column) [content-small-start] repeat(4, minmax(0, $ls-column)) [content-small-end] minmax(0, $ls-column) [content-large-end] minmax(0, $ls-column) [content-extra-large-end] minmax(0, $ls-column) [extend-end] 1fr [bleed-end];
+         grid-column-gap: var(--u-layout-gap);
+         grid-template-columns: [bleed-start] 1fr [extend-start] minmax(0, var(--u-layout-column)) [content-extra-large-start] minmax(0, var(--u-layout-column)) [content-large-start] minmax(0, var(--u-layout-column)) [content-small-start] repeat(4, minmax(0, var(--u-layout-column))) [content-small-end] minmax(0, var(--u-layout-column)) [content-large-end] minmax(0, var(--u-layout-column)) [content-extra-large-end] minmax(0, var(--u-layout-column)) [extend-end] 1fr [bleed-end];
          .o-grid__small {
             grid-column: content-small;
          }
@@ -32,13 +32,13 @@ html {
          .o-grid__abreast {
             display: grid;
             grid-column: extend;
-            grid-column-gap: $ls-gap;
+            grid-column-gap: var(--u-layout-gap);
             grid-template-columns: repeat(2, 1fr);
          }
          .o-grid__triad {
             display: grid;
             grid-column: extend;
-            grid-column-gap: $ls-gap;
+            grid-column-gap: var(--u-layout-gap);
             grid-template-columns: repeat(3, 1fr);
             grid-template-columns: 1fr 1fr 2fr;
          }
@@ -56,17 +56,12 @@ html {
             grid-column: bleed;
             grid-template-columns: inherit;
             grid-column-gap: inherit;
-            * {
-               // debug
-               margin-bottom: $u-spacer--30;
-               background: $c-neutral--light;
-            }
          }
       }
    }
-   @media(min-width: map-get($breakpoints, large)) {
+   @media(min-width: 80em) {
       .o-grid {
-         grid-column-gap: $ls-gap--s;
+         grid-column-gap: var(--u-layout-gap-small);
       }
    }
 }

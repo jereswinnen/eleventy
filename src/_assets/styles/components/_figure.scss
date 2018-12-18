@@ -10,7 +10,7 @@
 }
 .c-figure--contained {
    //padding: $u-spacer--40;
-   background: $c-neutral--lightest;
+   background: var(--c-main-lightest);
    img {
       display: block;
    }
