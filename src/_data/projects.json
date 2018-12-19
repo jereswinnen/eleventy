@@ -1,0 +1,37 @@
+{
+   "shelf": {
+      "name": "Shelf for iPad",
+      "description": "An iPad app for power users who work with documents on a daily basis.",
+      "url": "https://porsche.com"
+   },
+   "realo": {
+      "name": "Realo",
+      "description": "Building a next generation real estate platform.",
+      "url": "https://realo.com"
+   },
+   "diabetik": {
+      "name": "Diabetik for iOS",
+      "description": "Elegant diabetes management at your fingertips.",
+      "url": "https://diabetikapp.com"
+   },
+   "immobrown": {
+      "name": "Immo Brown",
+      "description": "An elegant new website for an exclusive real estate agent.",
+      "url": "https://immobrownknokke.be"
+   },
+   "scorecard": {
+      "name": "Scorecard",
+      "description": "To be defined",
+      "url": "https://porsche.com"
+   },
+   "helpper": {
+      "name": "Helpper",
+      "description": "To be defined",
+      "url": "https://helpper.be"
+   },
+   "hocusfocus": {
+      "name": "Hocus Focus",
+      "description": "To be defined",
+      "url": "https://hocusfoc.us"
+   }
+}

@@ -1,7 +1,7 @@
 ---
-layout: layouts/home
-title: Home
-permalink: /index.html
+layout: layouts/grid
+title: Grid
+permalink: /grid/index.html
 type: homepage
 ---
 # *Matter* is the design studio of Jeremy Swinnen.

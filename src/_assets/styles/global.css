@@ -250,6 +250,7 @@ h1 {
 h2 {
   margin-bottom: var(--u-spacer);
   font-size: var(--f-size-h2);
+  line-height: var(--f-leading);
   color: var(--c-main-darkest);
   letter-spacing: -0.016743rem; }
 
@@ -257,20 +258,23 @@ h3 {
   margin-bottom: var(--u-spacer);
   font-family: var(--f-family-serif);
   font-size: var(--f-size-h3);
+  line-height: var(--f-leading);
   color: var(--c-main-darkest);
   font-weight: bold; }
 
 h4 {
   margin-bottom: var(--u-spacer);
   font-size: var(--f-size-h4);
+  line-height: var(--f-leading);
   color: currentColor;
-  font-weight: 600; }
-  h4 .c-article--lede {
-    font-weight: regular; }
+  font-weight: bold; }
+  h4.c-article__lede {
+    font-weight: normal; }
 
 h5 {
   margin-bottom: var(--u-spacer-20);
   font-size: var(--f-size-h5);
+  line-height: var(--f-leading);
   color: var(--c-main-mid);
   text-transform: uppercase;
   letter-spacing: 0.125rem; }
@@ -431,6 +435,11 @@ a {
 
 .c-section {
   margin-bottom: var(--u-spacer-50); }
+
+.c-section--shelf {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background: var(--c-shelf); }
 
 .c-article {
   margin-bottom: var(--u-spacer-40); }

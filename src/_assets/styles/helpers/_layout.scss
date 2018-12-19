@@ -14,6 +14,9 @@ html {
          display: grid;
          grid-column-gap: var(--u-layout-gap);
          grid-template-columns: [bleed-start] 1fr [extend-start] minmax(0, var(--u-layout-column)) [content-extra-large-start] minmax(0, var(--u-layout-column)) [content-large-start] minmax(0, var(--u-layout-column)) [content-small-start] repeat(4, minmax(0, var(--u-layout-column))) [content-small-end] minmax(0, var(--u-layout-column)) [content-large-end] minmax(0, var(--u-layout-column)) [content-extra-large-end] minmax(0, var(--u-layout-column)) [extend-end] 1fr [bleed-end];
+
+         //grid-template-columns: [container-start] auto [content-start] minmax(0,1fr) [content-end] auto [container-end];
+
          .o-grid__small {
             grid-column: content-small;
          }
