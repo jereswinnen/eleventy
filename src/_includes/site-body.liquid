@@ -4,7 +4,15 @@
          {{ content }}
       </header>
    </article>
+   {% if type == 'homepage' %}
    <section class="c-section c-section--shelf">
+      <nav class="c-nav c-nav--dots">
+         <ul class="c-nav__items">
+            <li class="c-nav__item c-nav__item--selected"><a href="#">Shelf</a></li>
+            <li class="c-nav__item"><a href="#">Diabetik</a></li>
+            <li class="c-nav__item"><a href="#">Realo</a></li>
+         </ul>
+      </nav>
       <article class="c-article">
          <header class="c-article__header">
             <h3>{{ projects.shelf.name }}</h3>
@@ -12,4 +20,5 @@
          </header>
       </article>
    </section>
+   {% endif %}
 </main>

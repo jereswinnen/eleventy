@@ -89,7 +89,7 @@ body {
     grid-column: bleed; }
     body .c-masthead > *, body .c-main > *, body .c-main .o-grid--bleed > * {
       grid-column: content; }
-    body .c-masthead .o-grid--abreast, body .c-masthead .o-grid--triad, body .c-main .o-grid--abreast, body .c-main .o-grid--triad, body .c-main .o-grid--bleed .o-grid--abreast, body .c-main .o-grid--bleed .o-grid--triad {
+    body .c-masthead .o-grid--abreast, body .c-masthead .o-grid--triad, body .c-masthead .o-grid--asymmetric, body .c-masthead .o-grid--asymmetricreverse, body .c-main .o-grid--abreast, body .c-main .o-grid--triad, body .c-main .o-grid--asymmetric, body .c-main .o-grid--asymmetricreverse, body .c-main .o-grid--bleed .o-grid--abreast, body .c-main .o-grid--bleed .o-grid--triad, body .c-main .o-grid--bleed .o-grid--asymmetric, body .c-main .o-grid--bleed .o-grid--asymmetricreverse {
       display: grid;
       grid-column-gap: inherit; }
   @media (min-width: 44em) {
@@ -98,7 +98,11 @@ body {
     body .c-masthead .o-grid--abreast, body .c-main .o-grid--abreast {
       grid-template-columns: repeat(2, 1fr); }
     body .c-masthead .o-grid--triad, body .c-main .o-grid--triad {
-      grid-template-columns: repeat(3, 1fr); } }
+      grid-template-columns: repeat(3, 1fr); }
+    body .c-masthead .o-grid--asymmetric, body .c-main .o-grid--asymmetric {
+      grid-template-columns: 2fr 1.25fr; }
+    body .c-masthead .o-grid--asymmetricreverse, body .c-main .o-grid--asymmetricreverse {
+      grid-template-columns: 1.25fr 2fr; } }
 
 html {
   box-sizing: border-box;
@@ -411,6 +415,27 @@ a {
       margin-bottom: 0; }
       .c-nav--primary {
         margin-bottom: 0; } }
+
+.c-nav--dots {
+  margin-bottom: var(--u-spacer-30); }
+  .c-nav--dots .c-nav__items {
+    display: flex; }
+    .c-nav--dots .c-nav__items .c-nav__item {
+      margin: 0 0.7rem 0 0; }
+      .c-nav--dots .c-nav__items .c-nav__item a {
+        display: block;
+        width: 7px;
+        height: 7px;
+        content: '';
+        background: white;
+        border-radius: 10px;
+        opacity: .5;
+        text-indent: -9999px;
+        transition: opacity 0.2s var(--t-bezier); }
+        .c-nav--dots .c-nav__items .c-nav__item a:hover {
+          opacity: 1; }
+      .c-nav--dots .c-nav__items .c-nav__item.c-nav__item--selected a {
+        opacity: 1; }
 
 .c-section {
   margin-bottom: var(--u-spacer-50); }

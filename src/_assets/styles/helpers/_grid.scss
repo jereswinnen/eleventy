@@ -17,7 +17,7 @@ body {
       > * {
          grid-column: content;
       }
-      .o-grid--abreast, .o-grid--triad {
+      .o-grid--abreast, .o-grid--triad, .o-grid--asymmetric, .o-grid--asymmetricreverse {
          display: grid;
          grid-column-gap: inherit;
       }
@@ -31,6 +31,12 @@ body {
       }
       .c-masthead .o-grid--triad, .c-main .o-grid--triad {
          grid-template-columns: repeat(3, 1fr);   
-      }     
+      }
+      .c-masthead .o-grid--asymmetric, .c-main .o-grid--asymmetric {
+         grid-template-columns: 2fr 1.25fr;
+      }
+      .c-masthead .o-grid--asymmetricreverse, .c-main .o-grid--asymmetricreverse {
+         grid-template-columns: 1.25fr 2fr;
+      }
    }
 }

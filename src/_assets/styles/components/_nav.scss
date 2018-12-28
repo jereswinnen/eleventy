@@ -39,3 +39,30 @@
       }
    }
 }
+.c-nav--dots {
+   margin-bottom: var(--u-spacer-30);
+   //background: red;
+   .c-nav__items {
+      display: flex;
+      .c-nav__item {
+         margin: 0 0.7rem 0 0;
+         a {
+            display: block;
+            width: 7px;
+            height: 7px;
+            content: '';
+            background: white;
+            border-radius: 10px;
+            opacity: .5;
+            text-indent: -9999px;
+            transition: opacity .2s var(--t-bezier);
+            &:hover {
+               opacity: 1;
+            }
+         }
+         &.c-nav__item--selected a {
+            opacity: 1;
+         }
+      }
+   }
+}
