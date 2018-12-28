@@ -1,0 +1,9 @@
+{
+   "internal": {
+      "home": "/index.html",
+      "grid": "/grid/index.html"
+   },
+   "external": {
+      "porsche": "https://porsche.com"
+   }
+}
