@@ -89,7 +89,7 @@ body {
     grid-column: bleed; }
     body .c-masthead > *, body .c-main > *, body .c-main .o-grid--bleed > * {
       grid-column: content; }
-    body .c-masthead .o-grid--abreast, body .c-masthead .o-grid--triad, body .c-masthead .o-grid--asymmetric, body .c-masthead .o-grid--asymmetricreverse, body .c-main .o-grid--abreast, body .c-main .o-grid--triad, body .c-main .o-grid--asymmetric, body .c-main .o-grid--asymmetricreverse, body .c-main .o-grid--bleed .o-grid--abreast, body .c-main .o-grid--bleed .o-grid--triad, body .c-main .o-grid--bleed .o-grid--asymmetric, body .c-main .o-grid--bleed .o-grid--asymmetricreverse {
+    body .c-masthead .o-grid--abreast, body .c-masthead .o-grid--triad, body .c-masthead .o-grid--asymmetric, body .c-masthead .o-grid--asymmetricreverse, body .c-masthead .o-grid--work, body .c-main .o-grid--abreast, body .c-main .o-grid--triad, body .c-main .o-grid--asymmetric, body .c-main .o-grid--asymmetricreverse, body .c-main .o-grid--work, body .c-main .o-grid--bleed .o-grid--abreast, body .c-main .o-grid--bleed .o-grid--triad, body .c-main .o-grid--bleed .o-grid--asymmetric, body .c-main .o-grid--bleed .o-grid--asymmetricreverse, body .c-main .o-grid--bleed .o-grid--work {
       display: grid;
       grid-column-gap: inherit; }
   @media (min-width: 44em) {
@@ -102,7 +102,29 @@ body {
     body .c-masthead .o-grid--asymmetric, body .c-main .o-grid--asymmetric {
       grid-template-columns: 2fr 1.25fr; }
     body .c-masthead .o-grid--asymmetricreverse, body .c-main .o-grid--asymmetricreverse {
-      grid-template-columns: 1.25fr 2fr; } }
+      grid-template-columns: 1.25fr 2fr; }
+    body .c-main .o-grid--work {
+      grid-template-columns: repeat(8, 1fr);
+      grid-template-areas: "shelf shelf shelf helpper helpper helpper helpper helpper" "diabetik diabetik diabetik diabetik diabetik diabetik diabetik diabetik" ". realo realo realo realo . . ." ". . . scorecard scorecard scorecard scorecard scorecard" "hocusfocus hocusfocus hocusfocus hocusfocus hocusfocus hocusfocus . ."; }
+      body .c-main .o-grid--work > * {
+        margin-bottom: 3rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center; }
+        body .c-main .o-grid--work > *:last-child {
+          margin-bottom: 0; }
+      body .c-main .o-grid--work > *.o-grid__element--shelf {
+        grid-area: shelf; }
+      body .c-main .o-grid--work > *.o-grid__element--helpper {
+        grid-area: helpper; }
+      body .c-main .o-grid--work > *.o-grid__element--diabetik {
+        grid-area: diabetik; }
+      body .c-main .o-grid--work > *.o-grid__element--realo {
+        grid-area: realo; }
+      body .c-main .o-grid--work > *.o-grid__element--scorecard {
+        grid-area: scorecard; }
+      body .c-main .o-grid--work > *.o-grid__element--hocusfocus {
+        grid-area: hocusfocus; } }
 
 html {
   box-sizing: border-box;
@@ -465,19 +487,24 @@ a {
   color: var(--c-main-darkest);
   border-top: 1px solid var(--c-main-darkest); }
 
+.c-figure img {
+  display: block; }
+
 .c-figure figcaption {
   color: currentColor; }
 
 .c-figure--contained {
   background: var(--c-main-lightest); }
-  .c-figure--contained img {
-    display: block; }
 
 .c-list {
   padding: 0;
   list-style: none; }
   .c-list .c-list__item {
     margin-bottom: var(--u-spacer-15); }
+
+.c-item {
+  padding: 1rem;
+  background: var(--c-main-lightest); }
 
 body.t--shelf:before {
   position: absolute;

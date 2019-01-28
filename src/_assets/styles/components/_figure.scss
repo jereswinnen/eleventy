@@ -4,6 +4,9 @@
 
 .c-figure {
    //margin-bottom: $u-spacer--40;
+   img {
+      display: block;
+   }
    figcaption {
       color: currentColor;
    }
@@ -11,7 +14,4 @@
 .c-figure--contained {
    //padding: $u-spacer--40;
    background: var(--c-main-lightest);
-   img {
-      display: block;
-   }
 }

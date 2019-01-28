@@ -17,7 +17,7 @@ body {
       > * {
          grid-column: content;
       }
-      .o-grid--abreast, .o-grid--triad, .o-grid--asymmetric, .o-grid--asymmetricreverse {
+      .o-grid--abreast, .o-grid--triad, .o-grid--asymmetric, .o-grid--asymmetricreverse, .o-grid--work {
          display: grid;
          grid-column-gap: inherit;
       }
@@ -37,6 +37,42 @@ body {
       }
       .c-masthead .o-grid--asymmetricreverse, .c-main .o-grid--asymmetricreverse {
          grid-template-columns: 1.25fr 2fr;
+      }
+      .c-main .o-grid--work {
+         grid-template-columns: repeat(8, 1fr);
+         grid-template-areas: 
+         "shelf shelf shelf helpper helpper helpper helpper helpper"
+         "diabetik diabetik diabetik diabetik diabetik diabetik diabetik diabetik"
+         ". realo realo realo realo . . ."
+         ". . . scorecard scorecard scorecard scorecard scorecard"
+         "hocusfocus hocusfocus hocusfocus hocusfocus hocusfocus hocusfocus . .";
+         > * {
+            margin-bottom: 3rem; //adjust this to be flexible
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            &:last-child {
+               margin-bottom: 0;
+            }
+         }
+         > *.o-grid__element--shelf {
+            grid-area: shelf;
+         }
+         > *.o-grid__element--helpper {
+            grid-area: helpper;
+         }
+         > *.o-grid__element--diabetik {
+            grid-area: diabetik;
+         }
+         > *.o-grid__element--realo {
+            grid-area: realo;
+         }
+         > *.o-grid__element--scorecard {
+            grid-area: scorecard;
+         }
+         > *.o-grid__element--hocusfocus {
+            grid-area: hocusfocus;
+         }
       }
    }
 }
