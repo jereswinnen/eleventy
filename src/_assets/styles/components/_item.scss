@@ -3,6 +3,21 @@
 // =======================================================================
 
 .c-item {
-   padding: 1rem;
-   background: var(--c-main-lightest);
+   background: var(--c-main-lightest); //debug
+   transition: all 1.4s var(--t-bezier);
+   .c-figure {
+      overflow: hidden;
+      img { 
+         transition: all 1.4s var(--t-bezier);
+      }
+   }
+   a {
+      text-decoration: none;
+   }
+   &:hover {
+      transform: scale(1.025);
+      .c-figure img {
+         transform: scale(1.1);
+      }
+   }
 }

@@ -21,6 +21,12 @@ body {
          display: grid;
          grid-column-gap: inherit;
       }
+      .o-grid--work .c-item {
+         margin-bottom: 7vh;
+         &:last-child {
+            margin-bottom: 0;
+         }
+      }
    }
    @media(min-width: 44em) {
       .c-main > *.o-grid__element, .c-main .o-grid--bleed > *.o-grid__element {
@@ -45,15 +51,12 @@ body {
          "diabetik diabetik diabetik diabetik diabetik diabetik diabetik diabetik"
          ". realo realo realo realo . . ."
          ". . . scorecard scorecard scorecard scorecard scorecard"
-         "hocusfocus hocusfocus hocusfocus hocusfocus hocusfocus hocusfocus . .";
+         "hocusfocus hocusfocus hocusfocus hocusfocus hocusfocus hocusfocus . ."
+         "immobrown immobrown immobrown immobrown immobrown immobrown immobrown immobrown";
          > * {
-            margin-bottom: 3rem; //adjust this to be flexible
             display: flex;
             flex-direction: column;
             justify-content: center;
-            &:last-child {
-               margin-bottom: 0;
-            }
          }
          > *.o-grid__element--shelf {
             grid-area: shelf;
@@ -72,6 +75,9 @@ body {
          }
          > *.o-grid__element--hocusfocus {
             grid-area: hocusfocus;
+         }
+         > *.o-grid__element--immobrown {
+            grid-area: immobrown;
          }
       }
    }

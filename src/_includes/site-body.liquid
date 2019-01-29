@@ -1,24 +1,74 @@
 <main class="c-main">
-   <article class="c-article">
+   <article class="o-grid__element c-article">
       <header class="c-article__header">
          {{ content }}
       </header>
    </article>
    {% if type == 'homepage' %}
-   <section class="c-section c-section--shelf">
-      <nav class="c-nav c-nav--dots">
-         <ul class="c-nav__items">
-            <li class="c-nav__item c-nav__item--selected"><a href="#">Shelf</a></li>
-            <li class="c-nav__item"><a href="#">Diabetik</a></li>
-            <li class="c-nav__item"><a href="#">Realo</a></li>
-         </ul>
-      </nav>
-      <article class="c-article">
-         <header class="c-article__header">
-            <h3>{{ projects.shelf.name }}</h3>
-            <h4 class="c-article__lede">{{ projects.shelf.description }}</h4>
-         </header>
-      </article>
+   <section class="o-grid--work c-section">
+      <div class="o-grid__element--shelf c-item">
+         <a href="#">
+            <figure class="c-figure">
+               <img src="https://images.unsplash.com/photo-1548502567-d6f175c4808f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80" alt="">
+            </figure>
+            <a href="#"><b>{{ projects.shelf.name }}</b></a>
+            <p>{{ projects.shelf.description }}</p>
+         </a>
+      </div>
+      <div class="o-grid__element--helpper c-item">
+         <a href="#">
+            <figure class="c-figure">
+               <img src="https://images.unsplash.com/photo-1548502567-d6f175c4808f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80" alt="">
+            </figure>
+            <a href="#"><b>{{ projects.helpper.name }}</b></a>
+            <p>{{ projects.helpper.description }}</p>
+         </a>
+      </div>
+      <div class="o-grid__element--diabetik c-item">
+         <a href="#">
+            <figure class="c-figure">
+               <img src="https://images.unsplash.com/photo-1548502567-d6f175c4808f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80" alt="">
+            </figure>
+            <a href="#"><b>{{ projects.diabetik.name }}</b></a>
+            <p>{{ projects.diabetik.description }}</p>
+         </a>
+      </div>
+      <div class="o-grid__element--realo c-item">
+         <a href="#">
+            <figure class="c-figure">
+               <img src="https://images.unsplash.com/photo-1548502567-d6f175c4808f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80" alt="">
+            </figure>
+            <a href="#"><b>{{ projects.realo.name }}</b></a>
+            <p>{{ projects.realo.description }}</p>
+         </a>
+      </div>
+      <div class="o-grid__element--scorecard c-item">
+         <a href="#">
+            <figure class="c-figure">
+               <img src="https://images.unsplash.com/photo-1548502567-d6f175c4808f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80" alt="">
+            </figure>
+            <a href="#"><b>{{ projects.scorecard.name }}</b></a>
+            <p>{{ projects.scorecard.description }}</p>
+         </a>
+      </div>
+      <div class="o-grid__element--hocusfocus c-item">
+         <a href="#">
+            <figure class="c-figure">
+               <img src="https://images.unsplash.com/photo-1548502567-d6f175c4808f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80" alt="">
+            </figure>
+            <a href="#"><b>{{ projects.hocusfocus.name }}</b></a>
+            <p>{{ projects.hocusfocus.description }}</p>
+         </a>
+      </div>
+      <div class="o-grid__element--immobrown c-item">
+         <a href="#">
+            <figure class="c-figure">
+               <img src="https://images.unsplash.com/photo-1548502567-d6f175c4808f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80" alt="">
+            </figure>
+            <a href="#"><b>{{ projects.immobrown.name }}</b></a>
+            <p>{{ projects.immobrown.description }}</p>
+         </a>
+      </div>
    </section>
    {% endif %}
 </main>

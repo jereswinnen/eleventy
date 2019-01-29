@@ -5,9 +5,7 @@
 a {
    color: currentColor;
    text-decoration: underline;
-   transition: opacity .24s var(--t-bezier);
    &:hover {
-      opacity: .7;
       text-decoration: none;
    }
 }

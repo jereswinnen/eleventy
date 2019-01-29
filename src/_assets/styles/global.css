@@ -92,6 +92,10 @@ body {
     body .c-masthead .o-grid--abreast, body .c-masthead .o-grid--triad, body .c-masthead .o-grid--asymmetric, body .c-masthead .o-grid--asymmetricreverse, body .c-masthead .o-grid--work, body .c-main .o-grid--abreast, body .c-main .o-grid--triad, body .c-main .o-grid--asymmetric, body .c-main .o-grid--asymmetricreverse, body .c-main .o-grid--work, body .c-main .o-grid--bleed .o-grid--abreast, body .c-main .o-grid--bleed .o-grid--triad, body .c-main .o-grid--bleed .o-grid--asymmetric, body .c-main .o-grid--bleed .o-grid--asymmetricreverse, body .c-main .o-grid--bleed .o-grid--work {
       display: grid;
       grid-column-gap: inherit; }
+    body .c-masthead .o-grid--work .c-item, body .c-main .o-grid--work .c-item, body .c-main .o-grid--bleed .o-grid--work .c-item {
+      margin-bottom: 7vh; }
+      body .c-masthead .o-grid--work .c-item:last-child, body .c-main .o-grid--work .c-item:last-child, body .c-main .o-grid--bleed .o-grid--work .c-item:last-child {
+        margin-bottom: 0; }
   @media (min-width: 44em) {
     body .c-main > *.o-grid__element, body .c-main .o-grid--bleed > *.o-grid__element {
       max-width: 60%; }
@@ -105,14 +109,11 @@ body {
       grid-template-columns: 1.25fr 2fr; }
     body .c-main .o-grid--work {
       grid-template-columns: repeat(8, 1fr);
-      grid-template-areas: "shelf shelf shelf helpper helpper helpper helpper helpper" "diabetik diabetik diabetik diabetik diabetik diabetik diabetik diabetik" ". realo realo realo realo . . ." ". . . scorecard scorecard scorecard scorecard scorecard" "hocusfocus hocusfocus hocusfocus hocusfocus hocusfocus hocusfocus . ."; }
+      grid-template-areas: "shelf shelf shelf helpper helpper helpper helpper helpper" "diabetik diabetik diabetik diabetik diabetik diabetik diabetik diabetik" ". realo realo realo realo . . ." ". . . scorecard scorecard scorecard scorecard scorecard" "hocusfocus hocusfocus hocusfocus hocusfocus hocusfocus hocusfocus . ." "immobrown immobrown immobrown immobrown immobrown immobrown immobrown immobrown"; }
       body .c-main .o-grid--work > * {
-        margin-bottom: 3rem;
         display: flex;
         flex-direction: column;
         justify-content: center; }
-        body .c-main .o-grid--work > *:last-child {
-          margin-bottom: 0; }
       body .c-main .o-grid--work > *.o-grid__element--shelf {
         grid-area: shelf; }
       body .c-main .o-grid--work > *.o-grid__element--helpper {
@@ -124,7 +125,9 @@ body {
       body .c-main .o-grid--work > *.o-grid__element--scorecard {
         grid-area: scorecard; }
       body .c-main .o-grid--work > *.o-grid__element--hocusfocus {
-        grid-area: hocusfocus; } }
+        grid-area: hocusfocus; }
+      body .c-main .o-grid--work > *.o-grid__element--immobrown {
+        grid-area: immobrown; } }
 
 html {
   box-sizing: border-box;
@@ -297,10 +300,8 @@ cite, .c-blockquote__author {
 
 a {
   color: currentColor;
-  text-decoration: underline;
-  transition: opacity 0.24s var(--t-bezier); }
+  text-decoration: underline; }
   a:hover {
-    opacity: .7;
     text-decoration: none; }
 
 .c-button {
@@ -487,14 +488,12 @@ a {
   color: var(--c-main-darkest);
   border-top: 1px solid var(--c-main-darkest); }
 
-.c-figure img {
-  display: block; }
-
-.c-figure figcaption {
-  color: currentColor; }
-
-.c-figure--contained {
-  background: var(--c-main-lightest); }
+.c-figure {
+  margin-bottom: var(--u-spacer-15); }
+  .c-figure img {
+    display: block; }
+  .c-figure figcaption {
+    color: currentColor; }
 
 .c-list {
   padding: 0;
@@ -503,8 +502,18 @@ a {
     margin-bottom: var(--u-spacer-15); }
 
 .c-item {
-  padding: 1rem;
-  background: var(--c-main-lightest); }
+  background: var(--c-main-lightest);
+  transition: all 1.4s var(--t-bezier); }
+  .c-item .c-figure {
+    overflow: hidden; }
+    .c-item .c-figure img {
+      transition: all 1.4s var(--t-bezier); }
+  .c-item a {
+    text-decoration: none; }
+  .c-item:hover {
+    transform: scale(1.025); }
+    .c-item:hover .c-figure img {
+      transform: scale(1.1); }
 
 body.t--shelf:before {
   position: absolute;
