@@ -1,44 +1,44 @@
-{
-   "shelf": {
+[
+   {
       "label": "shelf",
       "name": "Shelf for iPad",
       "description": "An iPad app for power users who work with documents on a daily basis.",
       "url": "https://porsche.com"
    },
-   "realo": {
-      "label": "realo",
-      "name": "Realo",
-      "description": "Building a next generation real estate platform.",
-      "url": "https://realo.com"
-   },
-   "diabetik": {
-      "label": "diabetik",
-      "name": "Diabetik for iOS",
-      "description": "Elegant diabetes management at your fingertips.",
-      "url": "https://diabetikapp.com"
-   },
-   "immobrown": {
-      "label": "immobrown",
-      "name": "Immo Brown",
-      "description": "An elegant new website for an exclusive real estate agent.",
-      "url": "https://immobrownknokke.be"
-   },
-   "scorecard": {
-      "label": "scorecard",
-      "name": "Scorecard",
-      "description": "To be defined",
-      "url": "https://porsche.com"
-   },
-   "helpper": {
+   {
       "label": "helpper",
       "name": "Helpper",
       "description": "To be defined",
       "url": "https://helpper.be"
    },
-   "hocusfocus": {
+   {
+      "label": "diabetik",
+      "name": "Diabetik for iOS",
+      "description": "Elegant diabetes management at your fingertips.",
+      "url": "https://diabetikapp.com"
+   },
+   {
+      "label": "realo",
+      "name": "Realo",
+      "description": "Building a next generation real estate platform.",
+      "url": "https://realo.com"
+   },
+   {
+      "label": "scorecard",
+      "name": "Scorecard",
+      "description": "To be defined",
+      "url": "https://porsche.com"
+   },
+   {
       "label": "hocusfocus",
       "name": "Hocus Focus",
       "description": "To be defined",
       "url": "https://hocusfoc.us"
+   },
+   {
+      "label": "immobrown",
+      "name": "Immo Brown",
+      "description": "An elegant new website for an exclusive real estate agent.",
+      "url": "https://immobrownknokke.be"
    }
-}
+]

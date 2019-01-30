@@ -502,16 +502,16 @@ a {
     margin-bottom: var(--u-spacer-15); }
 
 .c-item {
-  background: var(--c-main-lightest);
-  transition: all 1.4s var(--t-bezier); }
+  background: var(--c-main-lightest); }
   .c-item .c-figure {
-    overflow: hidden; }
+    overflow: hidden;
+    transition: transform 1.4s var(--t-bezier); }
     .c-item .c-figure img {
-      transition: all 1.4s var(--t-bezier); }
+      transition: transform 1.4s var(--t-bezier); }
   .c-item a {
     text-decoration: none; }
-  .c-item:hover {
-    transform: scale(1.025); }
+  .c-item:hover .c-figure {
+    transform: scale(1.035); }
     .c-item:hover .c-figure img {
       transform: scale(1.1); }
 
