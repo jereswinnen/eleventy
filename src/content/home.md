@@ -4,7 +4,6 @@ title: Home
 permalink: /index.html
 type: homepage
 ---
-# *Matter* is the design studio of Jeremy Swinnen.
-## I design websites and apps for businesses who seek to improve their online presence.
+## Matter is the design studio of Jeremy Swinnen. I'm a designer and creative developer building purposeful products and web experiences for individuals, small businesses, and startups.
 
-[Learn more about me](http://porsche.com)
+## Even if you don't seek design or development work, I can provide your organisation with advice on how to improve your online presence.
