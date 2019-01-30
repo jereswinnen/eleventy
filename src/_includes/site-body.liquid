@@ -12,8 +12,7 @@
             <figure class="c-figure">
                <img src="{{ item.cover }}" alt="">
             </figure>
-            <a href="#"><b>{{ item.name }}</b></a>
-            <p>{{ item.description }}</p>
+            <a class="c-item__meta" href="#"><b>{{ item.name }}</b><p> &mdash; {{ item.description }}</p></a>
          </a>
       </div>
       {% endfor %}

@@ -11,8 +11,12 @@
          transition: transform 1.4s var(--t-bezier);
       }
    }
-   a {
+   .c-item__meta {
       text-decoration: none;
+      p {
+         display: inline;
+         color: var(--c-main-mid);
+      }
    }
    &:hover .c-figure {
       transform: scale(1.035);
