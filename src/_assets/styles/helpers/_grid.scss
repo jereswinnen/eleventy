@@ -30,7 +30,7 @@ body {
    }
    @media(min-width: 44em) {
       .c-main > *.o-grid__element, .c-main .o-grid--bleed > *.o-grid__element {
-         max-width: 60%;
+         max-width: 70%;
       }
       .c-masthead .o-grid--abreast, .c-main .o-grid--abreast {
          grid-template-columns: repeat(2, 1fr);   

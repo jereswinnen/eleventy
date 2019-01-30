@@ -98,7 +98,7 @@ body {
         margin-bottom: 0; }
   @media (min-width: 44em) {
     body .c-main > *.o-grid__element, body .c-main .o-grid--bleed > *.o-grid__element {
-      max-width: 60%; }
+      max-width: 70%; }
     body .c-masthead .o-grid--abreast, body .c-main .o-grid--abreast {
       grid-template-columns: repeat(2, 1fr); }
     body .c-masthead .o-grid--triad, body .c-main .o-grid--triad {
