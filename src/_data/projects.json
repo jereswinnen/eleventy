@@ -3,42 +3,49 @@
       "label": "shelf",
       "name": "Shelf for iPad",
       "description": "An iPad app for power users who work with documents on a daily basis.",
+      "cover": "https://images.unsplash.com/photo-1548502567-d6f175c4808f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80",
       "url": "https://porsche.com"
    },
    {
       "label": "helpper",
       "name": "Helpper",
       "description": "To be defined",
+      "cover": "https://images.unsplash.com/photo-1548502567-d6f175c4808f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80",
       "url": "https://helpper.be"
    },
    {
       "label": "diabetik",
       "name": "Diabetik for iOS",
       "description": "Elegant diabetes management at your fingertips.",
+      "cover": "https://images.unsplash.com/photo-1548502567-d6f175c4808f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80",
       "url": "https://diabetikapp.com"
    },
    {
       "label": "realo",
       "name": "Realo",
       "description": "Building a next generation real estate platform.",
+      "cover": "https://images.unsplash.com/photo-1548502567-d6f175c4808f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80",
       "url": "https://realo.com"
    },
    {
       "label": "scorecard",
       "name": "Scorecard",
       "description": "To be defined",
+      "cover": "https://images.unsplash.com/photo-1548502567-d6f175c4808f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80",
       "url": "https://porsche.com"
    },
    {
       "label": "hocusfocus",
       "name": "Hocus Focus",
       "description": "To be defined",
+      "cover": "https://images.unsplash.com/photo-1548502567-d6f175c4808f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80",
       "url": "https://hocusfoc.us"
    },
    {
       "label": "immobrown",
       "name": "Immo Brown",
       "description": "An elegant new website for an exclusive real estate agent.",
+      "cover": "https://images.unsplash.com/photo-1548502567-d6f175c4808f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80",
       "url": "https://immobrownknokke.be"
    }
 ]
