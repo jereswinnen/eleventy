@@ -92,10 +92,8 @@ body {
     body .c-masthead .o-grid--abreast, body .c-masthead .o-grid--triad, body .c-masthead .o-grid--asymmetric, body .c-masthead .o-grid--asymmetricreverse, body .c-masthead .o-grid--work, body .c-main .o-grid--abreast, body .c-main .o-grid--triad, body .c-main .o-grid--asymmetric, body .c-main .o-grid--asymmetricreverse, body .c-main .o-grid--work, body .c-main .o-grid--bleed .o-grid--abreast, body .c-main .o-grid--bleed .o-grid--triad, body .c-main .o-grid--bleed .o-grid--asymmetric, body .c-main .o-grid--bleed .o-grid--asymmetricreverse, body .c-main .o-grid--bleed .o-grid--work {
       display: grid;
       grid-column-gap: inherit; }
-    body .c-masthead .o-grid--work .c-item, body .c-main .o-grid--work .c-item, body .c-main .o-grid--bleed .o-grid--work .c-item {
-      margin-bottom: 7vh; }
-      body .c-masthead .o-grid--work .c-item:last-child, body .c-main .o-grid--work .c-item:last-child, body .c-main .o-grid--bleed .o-grid--work .c-item:last-child {
-        margin-bottom: 0; }
+    body .c-masthead .o-grid--work, body .c-main .o-grid--work, body .c-main .o-grid--bleed .o-grid--work {
+      grid-row-gap: calc(var(--u-layout-gap)*3); }
   @media (min-width: 44em) {
     body .c-main > *.o-grid__element, body .c-main .o-grid--bleed > *.o-grid__element {
       max-width: 70%; }
@@ -109,6 +107,7 @@ body {
       grid-template-columns: 1.25fr 2fr; }
     body .c-main .o-grid--work {
       grid-template-columns: repeat(8, 1fr);
+      grid-row-gap: calc(var(--u-layout-gap)*1.5);
       grid-template-areas: "shelf shelf shelf helpper helpper helpper helpper helpper" "diabetik diabetik diabetik diabetik diabetik diabetik diabetik diabetik" ". realo realo realo realo . . ." ". . . scorecard scorecard scorecard scorecard scorecard" "hocusfocus hocusfocus hocusfocus hocusfocus hocusfocus hocusfocus . ." "immobrown immobrown immobrown immobrown immobrown immobrown immobrown immobrown"; }
       body .c-main .o-grid--work > * {
         display: flex;
@@ -117,6 +116,8 @@ body {
       body .c-main .o-grid--work > *.o-grid__element--shelf {
         grid-area: shelf; }
       body .c-main .o-grid--work > *.o-grid__element--helpper {
+        position: relative;
+        top: -5vh;
         grid-area: helpper; }
       body .c-main .o-grid--work > *.o-grid__element--diabetik {
         grid-area: diabetik; }

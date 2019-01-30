@@ -21,11 +21,8 @@ body {
          display: grid;
          grid-column-gap: inherit;
       }
-      .o-grid--work .c-item {
-         margin-bottom: 7vh;
-         &:last-child {
-            margin-bottom: 0;
-         }
+      .o-grid--work {
+         grid-row-gap: calc(var(--u-layout-gap)*3);
       }
    }
    @media(min-width: 44em) {
@@ -46,6 +43,7 @@ body {
       }
       .c-main .o-grid--work {
          grid-template-columns: repeat(8, 1fr);
+         grid-row-gap: calc(var(--u-layout-gap)*1.5);
          grid-template-areas: 
          "shelf shelf shelf helpper helpper helpper helpper helpper"
          "diabetik diabetik diabetik diabetik diabetik diabetik diabetik diabetik"
@@ -62,6 +60,8 @@ body {
             grid-area: shelf;
          }
          > *.o-grid__element--helpper {
+            position: relative;
+            top: -5vh;
             grid-area: helpper;
          }
          > *.o-grid__element--diabetik {
