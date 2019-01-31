@@ -5,21 +5,15 @@
 .c-article {
    margin-bottom: var(--u-spacer-40);
    .c-article__header {
-      .c-article__title, .c-article__tagline {
-         text-align: center;
-      }
+      
    }
-   .c-article__body {
-      margin-bottom: var(--u-spacer-30);
+}
+.c-article--hero {
+   h2:first-child {
+      margin-bottom: 2rem;
    }
-   .c-article__aside {
-      padding: var(--u-spacer-20);
-      background: var(--c-main-faintdark);
-      dd {
-         margin: 0 0 var(--u-spacer-15) 0;
-         &:last-child {
-            margin: 0;
-         }
-      }
+   @media(min-width: 44em) {
+      margin-bottom: 0;
+      padding: 10vh 0 20vh 0;
    }
 }
