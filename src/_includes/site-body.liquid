@@ -1,12 +1,10 @@
-<main class="c-main">
-   <article class="o-grid__element c-article c-article--hero">
-      <header class="c-article__header">
-         {{ content }}
-      </header>
-   </article>
+<main class="c-page">
+   <header class="o-grid__element c-page__header">
+      {{ content }}
+   </header>
    {% if type == 'homepage' %}
    <section class="o-grid--work c-section">
-      {% for item in projects %}
+      {% for item in cases %}
       <div class="o-grid__element--{{ item.label }} c-item">
          <a href="#">
             <figure class="c-figure">

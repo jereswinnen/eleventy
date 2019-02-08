@@ -1,0 +1,5 @@
+<figure class="{% if grid %}o-grid--{{ grid }} {% endif %}c-figure c-figure--contained">
+{% for screen in artwork %}
+   <img src="{{ screen.source }}" {% if screen.alt %}alt="{{ screen.alt }}"{% endif %}>
+{% endfor %}
+</figure>

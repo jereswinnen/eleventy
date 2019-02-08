@@ -21,8 +21,8 @@ h1 {
       font-style: normal;
    }
 }
-h2 {
-   margin-bottom: var(--u-spacer);
+h2, .c-blockquote__text {
+   margin-bottom: var(--u-spacer-20);
    font-size: var(--f-size-h2);
    line-height: var(--f-leading);
    color: var(--c-main-darkest);
@@ -59,12 +59,12 @@ small, figcaption p {
    line-height: var(--f-leading);
 }
 blockquote {
-   //margin: 0;
+   margin: 0;
    .c-blockquote__text {
-      color: var(--c-main-darkest);
+      
    }
 }
-cite, .c-blockquote__author {
+cite {
    font-style: normal;
 }
 

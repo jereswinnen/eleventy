@@ -1,10 +1,12 @@
 // =======================================================================
-// Article
+// Page
 // =======================================================================
 
-.c-article {
-   margin-bottom: var(--u-spacer-40);
-   .c-article__header {
-      
+.c-page {
+   .c-page__header {
+      @media(min-width: 44em) {
+         margin-bottom: 0;
+         padding: 10vh 0 20vh 0;
+      }   
    }
 }
