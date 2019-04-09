@@ -42,8 +42,7 @@
   --c-scorecard-darkest: orange;
   --c-shelf: #a899c9;
   --c-shelf-darkest: #a899c9;
-  --f-family-sans: "NhU", "BlinkMacSystemFont", -apple-system, "Helvetica Neue", Helvetica, sans-serif;
-  --f-family-serif: "RcL", Arial, Georgia, serif;
+  --f-family-sans: neue-haas-unica, "BlinkMacSystemFont", -apple-system, "Helvetica Neue", Helvetica, sans-serif;
   --f-size-body: calc(1rem + 0.425vmin);
   --f-size-body-small: calc(1rem - 0.25vmin);
   --f-size-body-large: 1.125rem;
@@ -257,9 +256,6 @@ h1 {
   font-family: var(--f-family-serif);
   font-size: var(--f-size-h1);
   line-height: var(--f-leading-tight); }
-  h1 em {
-    font-weight: bold;
-    font-style: normal; }
 
 h2, .c-blockquote__text {
   margin-bottom: var(--u-spacer-20);

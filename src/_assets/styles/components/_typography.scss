@@ -16,10 +16,6 @@ h1 {
    font-family: var(--f-family-serif);
    font-size: var(--f-size-h1);
    line-height: var(--f-leading-tight);
-   em {
-      font-weight: bold;
-      font-style: normal;
-   }
 }
 h2, .c-blockquote__text {
    margin-bottom: var(--u-spacer-20);
