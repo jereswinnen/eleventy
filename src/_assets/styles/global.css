@@ -22,26 +22,14 @@
   src: url("/_assets/fonts/RcL-bd-2018-12-18.woff2") format("woff2"), url("/_assets/fonts/RcL-bd-2018-12-18.woff") format("woff"); }
 
 :root {
-  --c-main-faintlight: #fff;
-  --c-main-lightest: #e4e5e5;
-  --c-main-light: #e0e2e2;
-  --c-main-mid: #8c8b85;
-  --c-main-darkest: #212928;
-  --c-main-faintdark: #000;
-  --c-diabetik: yellow;
-  --c-diabetik-darkest: yellow;
-  --c-helpper: red;
-  --c-helpper-darkest: red;
-  --c-hocusfocus: blue;
-  --c-hocusfocus-darkest: blue;
-  --c-immobrown: green;
-  --c-immobrown-darkest: green;
-  --c-realo: pink;
-  --c-realo-darkest: pink;
-  --c-scorecard: orange;
-  --c-scorecard-darkest: orange;
-  --c-shelf: #a899c9;
-  --c-shelf-darkest: #a899c9;
+  --c-neutral-dark: hsla(240, 3%, 7%, 1);
+  --c-neutral-dark-a50: hsla(240, 3%, 7%, 50%);
+  --c-neutral-dark-a40: hsla(240, 3%, 7%, 40%);
+  --c-neutral-dark-a20: hsla(240, 3%, 7%, 20%);
+  --c-neutral-light: hsla(60, 19%, 95%, 1);
+  --c-neutral-light-a50: hsla(60, 19%, 95%, 50%);
+  --c-neutral-light-a40: hsla(60, 19%, 95%, 40%);
+  --c-neutral-light-a20: hsla(60, 19%, 95%, 20%);
   --f-family-sans: neue-haas-unica, "BlinkMacSystemFont", -apple-system, "Helvetica Neue", Helvetica, sans-serif;
   --f-size-body: calc(1rem + 0.425vmin);
   --f-size-body-small: calc(1rem - 0.25vmin);
