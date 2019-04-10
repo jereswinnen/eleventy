@@ -7,7 +7,7 @@ body {
    font-family: var(--f-family-sans);
    font-size: var(--f-size-body);
    line-height: var(--f-leading);
-   color: var(--c-main-darkest);
+   color: var(--c-neutral-dark);
 }
 
 // Headings
@@ -21,7 +21,7 @@ h2, .c-blockquote__text {
    margin-bottom: var(--u-spacer-20);
    font-size: var(--f-size-h2);
    line-height: var(--f-leading);
-   color: var(--c-main-darkest);
+   color: var(--c-neutral-dark);
    letter-spacing: -0.016743rem;
 }
 h3 {
@@ -29,7 +29,7 @@ h3 {
    font-family: var(--f-family-serif);
    font-size: var(--f-size-h3);
    line-height: var(--f-leading);
-   color: var(--c-main-darkest);
+   color: var(--c-neutral-dark);
    font-weight: bold;
 }
 h4 {
@@ -46,7 +46,7 @@ h5 {
    margin-bottom: var(--u-spacer-20);
    font-size: var(--f-size-h5);
    line-height: var(--f-leading);
-   color: var(--c-main-mid);
+   color: var(--c-neutral-dark);
    text-transform: uppercase;
    letter-spacing: 0.125rem;
 }

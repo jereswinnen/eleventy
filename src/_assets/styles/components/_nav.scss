@@ -3,10 +3,6 @@
 // =======================================================================
 
 .c-nav {
-   margin-bottom: var(--u-spacer-20);
-   h3 {
-      color: var(--c-main-mid);
-   }
    .c-nav__items {
       padding: 0;
       list-style: none;
@@ -19,49 +15,7 @@
             margin-bottom: 0;
          }
          &.c-nav__item--selected {
-            opacity: .7;  
-         }
-      }
-   }
-   &--primary {
-      margin-bottom: var(--u-spacer-60);
-      .c-nav__items .c-nav__item {
-         margin-bottom: var(--u-spacer-30);
-         a {
-            font-size: 2rem; //32px
-         }
-      }
-   }
-   @media(min-width: 44em) {
-      margin-bottom: 0;
-      &--primary {
-         margin-bottom: 0;
-      }
-   }
-}
-.c-nav--dots {
-   margin-bottom: var(--u-spacer-30);
-   //background: red;
-   .c-nav__items {
-      display: flex;
-      .c-nav__item {
-         margin: 0 0.7rem 0 0;
-         a {
-            display: block;
-            width: 7px;
-            height: 7px;
-            content: '';
-            background: white;
-            border-radius: 10px;
-            opacity: .5;
-            text-indent: -9999px;
-            transition: opacity .2s var(--t-bezier);
-            &:hover {
-               opacity: 1;
-            }
-         }
-         &.c-nav__item--selected a {
-            opacity: 1;
+            font-weight: 500; 
          }
       }
    }
