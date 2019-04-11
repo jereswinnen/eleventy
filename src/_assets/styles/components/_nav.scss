@@ -7,15 +7,22 @@
       padding: 0;
       list-style: none;
       .c-nav__item {
-         margin-bottom: var(--u-spacer-10);
+         //margin-bottom: var(--u-spacer);
+         text-align: right;
          a {
+            font-size: var(--f-size-body-small);
+            color: var(--c-neutral-dark-a50);
             text-decoration: none;
+            &:hover {
+               color: var(--c-neutral-dark);
+            }
          }
          &:last-child {
             margin-bottom: 0;
          }
-         &.c-nav__item--selected {
-            font-weight: 500; 
+         &.c-nav__item--selected a {
+            font-weight: 500;
+            color: var(--c-neutral-dark);
          }
       }
    }

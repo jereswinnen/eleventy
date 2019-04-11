@@ -3,6 +3,9 @@
 // =======================================================================
 
 .c-masthead {
+   display: flex;
+   justify-content: space-between;
+   margin: var(--u-spacer-40) 0;
    .c-masthead__brand {
       //height: 22px;
       a {

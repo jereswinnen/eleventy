@@ -69,17 +69,17 @@ body {
   grid-template-columns: [bleed-start] var(--u-layout-column-small) [content-start] var(--u-layout-column) [content-end] var(--u-layout-column-small) [bleed-end]; }
   body > * {
     grid-column: content; }
-  body .c-masthead, body .c-page, body .c-page .o-grid--bleed {
+  body .c-page, body .c-page .o-grid--bleed {
     display: grid;
     grid-column-gap: inherit;
     grid-template-columns: inherit;
     grid-column: bleed; }
-    body .c-masthead > *, body .c-page > *, body .c-page .o-grid--bleed > * {
+    body .c-page > *, body .c-page .o-grid--bleed > * {
       grid-column: content; }
-    body .c-masthead .o-grid--abreast, body .c-masthead .o-grid--triad, body .c-masthead .o-grid--asymmetric, body .c-masthead .o-grid--asymmetricreverse, body .c-masthead .o-grid--work, body .c-page .o-grid--abreast, body .c-page .o-grid--triad, body .c-page .o-grid--asymmetric, body .c-page .o-grid--asymmetricreverse, body .c-page .o-grid--work, body .c-page .o-grid--bleed .o-grid--abreast, body .c-page .o-grid--bleed .o-grid--triad, body .c-page .o-grid--bleed .o-grid--asymmetric, body .c-page .o-grid--bleed .o-grid--asymmetricreverse, body .c-page .o-grid--bleed .o-grid--work {
+    body .c-page .o-grid--abreast, body .c-page .o-grid--triad, body .c-page .o-grid--asymmetric, body .c-page .o-grid--asymmetricreverse, body .c-page .o-grid--work, body .c-page .o-grid--bleed .o-grid--abreast, body .c-page .o-grid--bleed .o-grid--triad, body .c-page .o-grid--bleed .o-grid--asymmetric, body .c-page .o-grid--bleed .o-grid--asymmetricreverse, body .c-page .o-grid--bleed .o-grid--work {
       display: grid;
       grid-column-gap: inherit; }
-    body .c-masthead .o-grid--work, body .c-page .o-grid--work, body .c-page .o-grid--bleed .o-grid--work {
+    body .c-page .o-grid--work, body .c-page .o-grid--bleed .o-grid--work {
       grid-row-gap: calc(var(--u-layout-gap)*3); }
   @media (min-width: 44em) {
     body .c-page > *.o-grid__element, body .c-page .o-grid--bleed > *.o-grid__element {
@@ -89,42 +89,19 @@ body {
     body .c-page .c-page__content p {
       margin-left: 35%;
       max-width: 65%; }
-    body .c-masthead .o-grid--abreast, body .c-page .o-grid--abreast {
+    body .c-page .o-grid--abreast {
       grid-template-columns: repeat(2, 1fr); }
-    body .c-masthead .o-grid--triad, body .c-page .o-grid--triad {
+    body .c-page .o-grid--triad {
       grid-template-columns: repeat(3, 1fr); }
-    body .c-masthead .o-grid--asymmetric, body .c-page .o-grid--asymmetric {
+    body .c-page .o-grid--asymmetric {
       grid-template-columns: 2fr 1.25fr; }
-    body .c-masthead .o-grid--asymmetricreverse, body .c-page .o-grid--asymmetricreverse {
+    body .c-page .o-grid--asymmetricreverse {
       grid-template-columns: 1.25fr 2fr; }
-    body .c-page .o-grid--work {
-      grid-template-columns: repeat(8, 1fr);
-      grid-row-gap: calc(var(--u-layout-gap)*1.5);
-      grid-template-areas: "shelf shelf shelf helpper helpper helpper helpper helpper" "diabetik diabetik diabetik diabetik diabetik diabetik diabetik diabetik" ". realo realo realo realo . . ." ". . . scorecard scorecard scorecard scorecard scorecard" "hocusfocus hocusfocus hocusfocus hocusfocus hocusfocus hocusfocus . ." "immobrown immobrown immobrown immobrown immobrown immobrown immobrown immobrown"; }
-      body .c-page .o-grid--work > * {
-        display: flex;
-        flex-direction: column;
-        justify-content: center; }
-      body .c-page .o-grid--work > *.o-grid__element--shelf {
-        grid-area: shelf; }
-      body .c-page .o-grid--work > *.o-grid__element--helpper {
-        position: relative;
-        top: -5vh;
-        grid-area: helpper; }
-      body .c-page .o-grid--work > *.o-grid__element--diabetik {
-        grid-area: diabetik; }
-      body .c-page .o-grid--work > *.o-grid__element--realo {
-        grid-area: realo; }
-      body .c-page .o-grid--work > *.o-grid__element--scorecard {
-        grid-area: scorecard; }
-      body .c-page .o-grid--work > *.o-grid__element--hocusfocus {
-        grid-area: hocusfocus; }
-      body .c-page .o-grid--work > *.o-grid__element--immobrown {
-        grid-area: immobrown; }
     body .c-page .o-grid--screens {
       grid-template-columns: repeat(8, 1fr); } }
 
 html {
+  background: var(--c-neutral-light);
   box-sizing: border-box;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
@@ -312,25 +289,33 @@ cite {
   color: var(--c-main-darkest);
   border-top: 1px solid var(--c-main-darkest); }
 
-.c-masthead .c-masthead__brand a svg {
-  width: 124px;
-  fill: var(--c-neutral-dark);
-  transition: opacity 0.2s var(--t-bezier); }
-
-.c-masthead .c-masthead__brand a:hover svg {
-  opacity: .7; }
+.c-masthead {
+  display: flex;
+  justify-content: space-between;
+  margin: var(--u-spacer-40) 0; }
+  .c-masthead .c-masthead__brand a svg {
+    width: 124px;
+    fill: var(--c-neutral-dark);
+    transition: opacity 0.2s var(--t-bezier); }
+  .c-masthead .c-masthead__brand a:hover svg {
+    opacity: .7; }
 
 .c-nav .c-nav__items {
   padding: 0;
   list-style: none; }
   .c-nav .c-nav__items .c-nav__item {
-    margin-bottom: var(--u-spacer-10); }
+    text-align: right; }
     .c-nav .c-nav__items .c-nav__item a {
+      font-size: var(--f-size-body-small);
+      color: var(--c-neutral-dark-a50);
       text-decoration: none; }
+      .c-nav .c-nav__items .c-nav__item a:hover {
+        color: var(--c-neutral-dark); }
     .c-nav .c-nav__items .c-nav__item:last-child {
       margin-bottom: 0; }
-    .c-nav .c-nav__items .c-nav__item.c-nav__item--selected {
-      font-weight: 500; }
+    .c-nav .c-nav__items .c-nav__item.c-nav__item--selected a {
+      font-weight: 500;
+      color: var(--c-neutral-dark); }
 
 a {
   color: currentColor;
