@@ -3,7 +3,7 @@
       {{ content }}
    </header>
    {% if type == 'homepage' %}
-   <section class="o-grid--work c-section">
+   <section class="o-grid--work c-section" style="display:none;">
       {% for item in cases %}
       <div class="o-grid__element--{{ item.label }} c-item">
          <a href="#">

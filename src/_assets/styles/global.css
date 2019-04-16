@@ -26,6 +26,7 @@
   --c-neutral-dark-a50: hsla(240, 3%, 7%, 50%);
   --c-neutral-dark-a40: hsla(240, 3%, 7%, 40%);
   --c-neutral-dark-a20: hsla(240, 3%, 7%, 20%);
+  --c-neutral-mid: hsla(240, 2%, 16%, 1);
   --c-neutral-light: hsla(60, 19%, 95%, 1);
   --c-neutral-light-a50: hsla(60, 19%, 95%, 50%);
   --c-neutral-light-a40: hsla(60, 19%, 95%, 40%);
@@ -324,14 +325,18 @@ a {
     text-decoration: none; }
 
 .c-button {
-  padding: var(--u-spacer-10) var(--u-spacer-15);
-  background: white;
+  padding: var(--u-spacer-10) var(--u-spacer-20);
+  color: var(--c-neutral-light);
+  background: var(--c-neutral-mid);
   box-shadow: var(--d-layer-one);
+  border-radius: 50px;
+  text-decoration: none;
   transition: all 0.4s var(--t-bezier); }
   .c-button:hover {
-    transform: translateY(-2px); }
+    background: var(--c-neutral-dark); }
   .c-button:active {
-    background: rgba(255, 255, 255, 0.85); }
+    opacity: .7;
+    box-shadow: none; }
 
 .c-figure {
   margin-bottom: var(--u-spacer-15); }
