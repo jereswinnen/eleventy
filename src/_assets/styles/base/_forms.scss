@@ -3,42 +3,42 @@
 // =======================================================================
 
 fieldset {
-   margin: 0;
-   padding: 0;
-   border: 0;
+  margin: 0;
+  padding: 0;
+  border: 0;
 }
 legend {
-   padding: 0;
-   border: 0;
+  padding: 0;
+  border: 0;
 }
 label {
-   display: block;
+  display: block;
 }
 button, input, optgroup, select, textarea {
-   margin: 0;
-   font: inherit;
-   color: inherit;
-   background: none;
-   -webkit-appearance: none;
+  margin: 0;
+  font: inherit;
+  color: inherit;
+  background: none;
+  -webkit-appearance: none;
 }
 button, [type="button"], [type="reset"], [type="submit"] {
-   border: 0;
-   border-radius: 0;
-   overflow: visible;
-   cursor: pointer;
+  border: 0;
+  border-radius: 0;
+  overflow: visible;
+  cursor: pointer;
 }
 [type="checkbox"], [type="radio"] {
-   padding: 0;
+  padding: 0;
 }
 textarea {
-   overflow: auto;
+  overflow: auto;
 }
 ::placeholder {
-   color: var(--c-neutral-dark-a50);
+  color: var(--c-neutral-dark-a50);
 }
 :focus::placeholder {
-   opacity: 0.5;
+  opacity: 0.5;
 }
 :focus {
-   outline: none;
+  outline: none;
 }

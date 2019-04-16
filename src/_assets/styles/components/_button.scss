@@ -2,23 +2,22 @@
 // Primary & secondary calls to action
 // =======================================================================
 .c-button {
-   padding: var(--u-spacer-10) var(--u-spacer-20);
-   color: var(--c-neutral-light);
-   background: var(--c-neutral-mid);
-   box-shadow: var(--d-layer-one);
-   border-radius: 50px;
-   text-decoration: none;
-   transition: all .4s var(--t-bezier);
-   &:hover {
-      background: var(--c-neutral-dark);
-   }
-   &:active {
-      opacity: .7;
-      box-shadow: none;
-   }
+  padding: var(--u-spacer-10) var(--u-spacer-20);
+  color: var(--c-neutral-light);
+  background: var(--c-neutral-mid);
+  box-shadow: var(--d-layer-one);
+  border-radius: 50px;
+  text-decoration: none;
+  transition: all .4s var(--t-bezier);
+  &:hover {
+    background: var(--c-neutral-dark);
+  }
+  &:active {
+    opacity: .7;
+    box-shadow: none;
+  }
 }
 
 .c-button--small {
-   //padding: ;
-   //font-size: ;
+
 }

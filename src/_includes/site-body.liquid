@@ -1,19 +1,19 @@
 <main class="c-page">
-   <header class="o-grid__element c-page__header">
-      {{ content }}
-   </header>
-   {% if type == 'homepage' %}
-   <section class="o-grid--work c-section" style="display:none;">
-      {% for item in cases %}
-      <div class="o-grid__element--{{ item.label }} c-item">
-         <a href="#">
-            <figure class="c-figure">
-               <img src="{{ item.cover }}" alt="">
-            </figure>
-            <a class="c-item__meta" href="#"><b>{{ item.name }}</b><p> &mdash; {{ item.description }}</p></a>
-         </a>
-      </div>
-      {% endfor %}
-   </section>
-   {% endif %}
+  <header class="o-grid__element c-page__header">
+    {{ content }}
+  </header>
+  {% if type == 'homepage' %}
+  <section class="o-grid--work c-section" style="display:none;">
+    {% for item in cases %}
+    <div class="o-grid__element--{{ item.label }} c-item">
+      <a href="#">
+        <figure class="c-figure">
+          <img src="{{ item.cover }}" alt="">
+        </figure>
+        <a class="c-item__meta" href="#"><b>{{ item.name }}</b><p> &mdash; {{ item.description }}</p></a>
+      </a>
+    </div>
+    {% endfor %}
+  </section>
+  {% endif %}
 </main>

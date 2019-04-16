@@ -3,25 +3,11 @@
 // =======================================================================
 
 .c-item {
-   //background: var(--c-main-lightest); //debug
-   .c-figure {
-      overflow: hidden;
-      transition: transform 1.4s var(--t-bezier);
-      img { 
-         transition: transform 1.4s var(--t-bezier);
-      }
-   }
-   .c-item__meta {
-      text-decoration: none;
-      p {
-         display: inline;
-         color: var(--c-main-mid);
-      }
-   }
-   &:hover .c-figure {
-      transform: scale(1.035);
-      img {
-         transform: scale(1.1);   
-      }
-   }
+  .c-figure {
+    overflow: hidden;
+    transition: transform 1.4s var(--t-bezier);
+    img { 
+        transition: transform 1.4s var(--t-bezier);
+    }
+  }
 }

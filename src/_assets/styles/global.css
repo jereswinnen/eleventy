@@ -1,26 +1,3 @@
-@font-face {
-  font-family: NhU;
-  font-weight: normal;
-  font-style: normal;
-  src: url("/_assets/fonts/NhU-rg-2018-07-04.woff2") format("woff2"), url("/_assets/fonts/NhU-rg-2018-07-04.woff") format("woff"); }
-
-@font-face {
-  font-family: NhU;
-  font-weight: bold;
-  font-style: normal;
-  src: url("/_assets/fonts/NhU-bd-2018-07-04.woff2") format("woff2"), url("/_assets/fonts/NhU-bd-2018-07-04.woff") format("woff"); }
-
-@font-face {
-  font-family: RcL;
-  font-style: normal;
-  src: url("/_assets/fonts/RcL-md-2018-07-13.woff2") format("woff2"), url("/_assets/fonts/RcL-md-2018-07-13.woff") format("woff"); }
-
-@font-face {
-  font-family: RcL;
-  font-weight: bold;
-  font-style: normal;
-  src: url("/_assets/fonts/RcL-bd-2018-12-18.woff2") format("woff2"), url("/_assets/fonts/RcL-bd-2018-12-18.woff") format("woff"); }
-
 :root {
   --c-neutral-dark: hsla(240, 3%, 7%, 1);
   --c-neutral-dark-a50: hsla(240, 3%, 7%, 50%);
@@ -64,42 +41,8 @@
   --t-delay: 80ms;
   --d-layer-two: 0 1px 10px rgba(0, 0, 0, .1), 0 12px 35px rgba(0, 0, 0, .15); }
 
-body {
-  display: grid;
-  grid-column-gap: var(--u-layout-gap);
-  grid-template-columns: [bleed-start] var(--u-layout-column-small) [content-start] var(--u-layout-column) [content-end] var(--u-layout-column-small) [bleed-end]; }
-  body > * {
-    grid-column: content; }
-  body .c-page, body .c-page .o-grid--bleed {
-    display: grid;
-    grid-column-gap: inherit;
-    grid-template-columns: inherit;
-    grid-column: bleed; }
-    body .c-page > *, body .c-page .o-grid--bleed > * {
-      grid-column: content; }
-    body .c-page .o-grid--abreast, body .c-page .o-grid--triad, body .c-page .o-grid--asymmetric, body .c-page .o-grid--asymmetricreverse, body .c-page .o-grid--work, body .c-page .o-grid--bleed .o-grid--abreast, body .c-page .o-grid--bleed .o-grid--triad, body .c-page .o-grid--bleed .o-grid--asymmetric, body .c-page .o-grid--bleed .o-grid--asymmetricreverse, body .c-page .o-grid--bleed .o-grid--work {
-      display: grid;
-      grid-column-gap: inherit; }
-    body .c-page .o-grid--work, body .c-page .o-grid--bleed .o-grid--work {
-      grid-row-gap: calc(var(--u-layout-gap)*3); }
-  @media (min-width: 44em) {
-    body .c-page > *.o-grid__element, body .c-page .o-grid--bleed > *.o-grid__element {
-      max-width: 65%; }
-      body .c-page > *.o-grid__element--alignright, body .c-page .o-grid--bleed > *.o-grid__element--alignright {
-        margin-left: 35%; }
-    body .c-page .c-page__content p {
-      margin-left: 35%;
-      max-width: 65%; }
-    body .c-page .o-grid--abreast {
-      grid-template-columns: repeat(2, 1fr); }
-    body .c-page .o-grid--triad {
-      grid-template-columns: repeat(3, 1fr); }
-    body .c-page .o-grid--asymmetric {
-      grid-template-columns: 2fr 1.25fr; }
-    body .c-page .o-grid--asymmetricreverse {
-      grid-template-columns: 1.25fr 2fr; }
-    body .c-page .o-grid--screens {
-      grid-template-columns: repeat(8, 1fr); } }
+.o-grid {
+  display: grid; }
 
 html {
   background: var(--c-neutral-light);
@@ -265,30 +208,11 @@ blockquote {
 cite {
   font-style: normal; }
 
-.c-masthead__content .c-nav .c-nav__items .c-nav__item a {
-  font-family: var(--f-family-serif); }
-
-@media (min-width: 44em) {
-  .c-page .c-page__header {
-    margin-bottom: 0;
-    padding: 10vh 0 20vh 0; } }
-
 .c-section {
   margin-bottom: var(--u-spacer-50); }
 
-.c-section--shelf {
-  padding-top: 50px;
-  padding-bottom: 50px;
-  background: var(--c-shelf); }
-
 .c-article {
   margin-bottom: var(--u-spacer-40); }
-
-.c-footer {
-  margin-bottom: var(--u-spacer-20);
-  padding-top: var(--u-spacer);
-  color: var(--c-main-darkest);
-  border-top: 1px solid var(--c-main-darkest); }
 
 .c-masthead {
   display: flex;
@@ -363,17 +287,6 @@ a {
   transition: transform 1.4s var(--t-bezier); }
   .c-item .c-figure img {
     transition: transform 1.4s var(--t-bezier); }
-
-.c-item .c-item__meta {
-  text-decoration: none; }
-  .c-item .c-item__meta p {
-    display: inline;
-    color: var(--c-main-mid); }
-
-.c-item:hover .c-figure {
-  transform: scale(1.035); }
-  .c-item:hover .c-figure img {
-    transform: scale(1.1); }
 
 body.t--shelf:before {
   position: absolute;

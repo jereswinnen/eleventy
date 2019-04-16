@@ -3,62 +3,62 @@
 // =======================================================================
 
 :root {
-   /// Colour
-   --c-neutral-dark: hsla(240, 3%, 7%, 1);
-   --c-neutral-dark-a50: hsla(240, 3%, 7%, 50%);
-   --c-neutral-dark-a40: hsla(240, 3%, 7%, 40%);
-   --c-neutral-dark-a20: hsla(240, 3%, 7%, 20%);
+  /// Colour
+  --c-neutral-dark: hsla(240, 3%, 7%, 1);
+  --c-neutral-dark-a50: hsla(240, 3%, 7%, 50%);
+  --c-neutral-dark-a40: hsla(240, 3%, 7%, 40%);
+  --c-neutral-dark-a20: hsla(240, 3%, 7%, 20%);
 
-   --c-neutral-mid: hsla(240, 2%, 16%, 1);
+  --c-neutral-mid: hsla(240, 2%, 16%, 1);
 
-   --c-neutral-light: hsla(60, 19%, 95%, 1);
-   --c-neutral-light-a50: hsla(60, 19%, 95%, 50%);
-   --c-neutral-light-a40: hsla(60, 19%, 95%, 40%);
-   --c-neutral-light-a20: hsla(60, 19%, 95%, 20%);
+  --c-neutral-light: hsla(60, 19%, 95%, 1);
+  --c-neutral-light-a50: hsla(60, 19%, 95%, 50%);
+  --c-neutral-light-a40: hsla(60, 19%, 95%, 40%);
+  --c-neutral-light-a20: hsla(60, 19%, 95%, 20%);
 
-   /// Typography
-   --f-family-sans: neue-haas-unica, "BlinkMacSystemFont", -apple-system, "Helvetica Neue", Helvetica, sans-serif;
+  /// Typography
+  --f-family-sans: neue-haas-unica, "BlinkMacSystemFont", -apple-system, "Helvetica Neue", Helvetica, sans-serif;
 
-   --f-size-body: calc(1rem + 0.425vmin);
-   --f-size-body-small: calc(1rem - 0.25vmin);
-   --f-size-body-large: 1.125rem; //18px base size
+  --f-size-body: calc(1rem + 0.425vmin);
+  --f-size-body-small: calc(1rem - 0.25vmin);
+  --f-size-body-large: 1.125rem; //18px base size
 
-   --f-size-h1: calc(2.5rem + 1.45vw); //needs to be much bigger at larger vwprts
-   --f-size-h2: calc(1.25rem + 0.75vw);
-   --f-size-h3: calc(1.75rem + 0.25vw);
-   --f-size-h4: calc(1.125rem + 0.25vw);
-   --f-size-h5: 0.75rem;
-   --f-size-blockquote: var(--f-size-h3);
+  --f-size-h1: calc(2.5rem + 1.45vw); //needs to be much bigger at larger vwprts
+  --f-size-h2: calc(1.25rem + 0.75vw);
+  --f-size-h3: calc(1.75rem + 0.25vw);
+  --f-size-h4: calc(1.125rem + 0.25vw);
+  --f-size-h5: 0.75rem;
+  --f-size-blockquote: var(--f-size-h3);
 
-   --f-leading-tight: 1.25em;
-   --f-leading: 1.5em;
+  --f-leading-tight: 1.25em;
+  --f-leading: 1.5em;
 
-   /// Units
-   --u-spacer: 5px;
-   --u-spacer-10: calc(var(--u-spacer) * 2);
-   --u-spacer-15: calc(var(--u-spacer) * 3);
-   --u-spacer-20: calc(var(--u-spacer) * 4);
-   --u-spacer-30: calc(var(--u-spacer) * 6);
-   --u-spacer-40: calc(var(--u-spacer) * 8);
-   --u-spacer-50: calc(var(--u-spacer) * 10);
-   --u-spacer-60: calc(var(--u-spacer) * 12);
-   --u-spacer-80: calc(var(--u-spacer) * 16);
-   --u-spacer-100: calc(var(--u-spacer) * 20);
+  /// Units
+  --u-spacer: 5px;
+  --u-spacer-10: calc(var(--u-spacer) * 2);
+  --u-spacer-15: calc(var(--u-spacer) * 3);
+  --u-spacer-20: calc(var(--u-spacer) * 4);
+  --u-spacer-30: calc(var(--u-spacer) * 6);
+  --u-spacer-40: calc(var(--u-spacer) * 8);
+  --u-spacer-50: calc(var(--u-spacer) * 10);
+  --u-spacer-60: calc(var(--u-spacer) * 12);
+  --u-spacer-80: calc(var(--u-spacer) * 16);
+  --u-spacer-100: calc(var(--u-spacer) * 20);
 
-   --u-layout-column-small: 3vw; //0.5fr
-   --u-layout-column: 10fr;
-   --u-layout-gap-small: 3vw;
-   --u-layout-gap: 5vw;
+  --u-layout-column-small: 3vw; //0.5fr
+  --u-layout-column: 10fr;
+  --u-layout-gap-small: 3vw;
+  --u-layout-gap: 5vw;
 
-   --u-layout-viewport-medium: 44em; //704px
-   --u-layout-viewport-large: 80em; //1280px
-   --u-layout-viewport-largest: 90em; //1440px
+  --u-layout-viewport-medium: 44em; //704px
+  --u-layout-viewport-large: 80em; //1280px
+  --u-layout-viewport-largest: 90em; //1440px
 
-   /// Animation
-   --t-bezier: cubic-bezier(.165, .84, .44, 1);
-   --t-delay: 80ms;
+  /// Animation
+  --t-bezier: cubic-bezier(.165, .84, .44, 1);
+  --t-delay: 80ms;
 
-   /// Depth
-   //--d-layer-one: 0 1px 5px transparentize($color: var(--c-main-darkest), $amount: 0.9), 0 12px 30px transparentize($color: var(--c-main-darkest), $amount: 0.82);
-   --d-layer-two: 0 1px 10px rgba(0, 0, 0, .1), 0 12px 35px rgba(0, 0, 0, .15);
+  /// Depth
+  //--d-layer-one: 0 1px 5px transparentize($color: var(--c-main-darkest), $amount: 0.9), 0 12px 30px transparentize($color: var(--c-main-darkest), $amount: 0.82);
+  --d-layer-two: 0 1px 10px rgba(0, 0, 0, .1), 0 12px 35px rgba(0, 0, 0, .15);
 }

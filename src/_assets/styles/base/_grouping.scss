@@ -3,29 +3,29 @@
 // =======================================================================
 
 html {
-   background: var(--c-neutral-light);
-   box-sizing: border-box;
-   -ms-text-size-adjust: 100%;
-  	-webkit-text-size-adjust: 100%;
-   -webkit-font-smoothing: antialiased;
+  background: var(--c-neutral-light);
+  box-sizing: border-box;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
 }
 ::selection {
-   //background: $c-accent;
+  //background: $c-accent;
 }
 body {
-   margin: 0;
-   font-feature-settings: "calt", "liga", "hist", "onum", "pnum";
-   hypens: auto;
-   &.no-scroll {
-      overflow: hidden;
-   }
+  margin: 0;
+  font-feature-settings: "calt", "liga", "hist", "onum", "pnum";
+  hypens: auto;
+  &.no-scroll {
+    overflow: hidden;
+  }
 }
 article, aside, footer, header, main, nav, section {
-   display: block;
+  display: block;
 }
 h1, h2, h3, h4, h5, h6 {
-   margin: 0;
-   font-size: 1em;
-   font-weight: inherit;
-   text-rendering: optimizeLegibility;
+  margin: 0;
+  font-size: 1em;
+  font-weight: inherit;
+  text-rendering: optimizeLegibility;
 }

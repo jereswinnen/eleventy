@@ -3,19 +3,19 @@
 // =======================================================================
 
 .c-figure {
-   margin-bottom: var(--u-spacer-15);
-   img {
-      display: block;
-   }
-   figcaption {
-      color: currentColor;
-   }
+  margin-bottom: var(--u-spacer-15);
+  img {
+    display: block;
+  }
+  figcaption {
+    color: currentColor;
+  }
 }
 .c-figure--contained {
-   margin-bottom: var(--u-spacer-40);
-   padding: 6vw;
-   background: #C4C8CC;
-   img {
-      box-shadow: var(--d-layer-two);
-   }
+  margin-bottom: var(--u-spacer-40);
+  padding: 6vw;
+  background: #C4C8CC;
+  img {
+    box-shadow: var(--d-layer-two);
+  }
 }
