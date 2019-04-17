@@ -277,6 +277,9 @@ cite {
   .c-article--case .c-figure {
     margin: 0; }
 
+.c-footer {
+  color: var(--c-neutral-dark-a50); }
+
 .c-masthead .c-masthead__brand {
   margin-right: var(--u-spacer-15);
   height: 22px; }
