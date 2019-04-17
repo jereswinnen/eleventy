@@ -3,8 +3,13 @@
 // =======================================================================
 
 .c-article {
-  margin-bottom: var(--u-spacer-40);
+  background: wheat; //debug
   .c-article__header {
-      
+    background: green; //debug   
+  }
+  &--case {
+    .c-figure {
+      margin: 0;
+    }
   }
 }

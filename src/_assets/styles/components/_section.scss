@@ -4,4 +4,7 @@
 
 .c-section {
   margin-bottom: var(--u-spacer-50);
+  &--cases {
+    margin-bottom: 0;
+  }
 }

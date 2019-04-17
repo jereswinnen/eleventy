@@ -48,7 +48,7 @@ h5 {
   line-height: var(--f-leading);
   color: var(--c-neutral-dark);
   text-transform: uppercase;
-  letter-spacing: 0.125rem;
+  letter-spacing: var(--f-spacing-extended);
 }
 small, figcaption p {
   font-size: var(--f-size-body-small);
