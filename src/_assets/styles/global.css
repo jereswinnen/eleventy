@@ -74,6 +74,11 @@
       .o-grid--index .c-footer {
         grid-area: footer; } }
 
+.o-flex {
+  display: flex; }
+  .o-flex--ac {
+    align-items: center; }
+
 /*.c-page {
   margin-left: auto;
   margin-right: auto;
