@@ -1,19 +1,22 @@
-<main class="c-page">
-  <header class="o-grid__element c-page__header">
-    {{ content }}
-  </header>
-  {% if type == 'homepage' %}
-  <section class="o-grid--work c-section" style="display:none;">
-    {% for item in cases %}
-    <div class="o-grid__element--{{ item.label }} c-item">
-      <a href="#">
-        <figure class="c-figure">
-          <img src="{{ item.cover }}" alt="">
-        </figure>
-        <a class="c-item__meta" href="#"><b>{{ item.name }}</b><p> &mdash; {{ item.description }}</p></a>
-      </a>
-    </div>
-    {% endfor %}
+<main class="c-main" role="content">
+  <article class="c-article" role="content__pitch">
+    <h2>Jeremy Swinnen is a designer and creative developer focused on building purposeful products and web experiences for individuals, small businesses, and startups.</h2>
+    <a href="#">Read more about me</a>
+  </article>
+  <section role="case-studies">
+    <article class="c-article c-article--case" role="content__case--diabetik">
+      <header>
+        <h1>Diabetik</h1>
+        <h2>Elegant diabetes management at your fingertips.</h2>
+      </header>
+      <figure class="c-figure"><img src="https://images.unsplash.com/photo-1544368347-74092989cdcb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3597&q=80" alt="Figure alt"></figure>
+    </article>
+    <article class="c-article c-article--case" role="content__case--realo">
+      <header>
+        <h1>Realo</h1>
+        <h2>Building a next generation real estate platform.</h2>
+      </header>
+      <figure class="c-figure"><img src="https://images.unsplash.com/photo-1550613097-fe6c2c321cd3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3465&q=80" alt="Figure alt"></figure>
+    </article>
   </section>
-  {% endif %}
 </main>
