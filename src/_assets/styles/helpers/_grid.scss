@@ -9,13 +9,26 @@
   }
   @media(min-width: 44em) {
     &--index {
-      grid-template-columns: minmax(940px, 4fr) 1fr;
+      grid-template-columns: minmax(940px, 3.5fr) 1fr;
       grid-template-rows: 1fr 4fr 1fr; //tweak masthead/footer height //minmax(60px, 60px)
       grid-template-areas:
-        "masthead aside"
-        "main aside"
-        "footer aside";
+        "masthead panel"
+        "main panel"
+        "footer panel";
       height: 100vh;
+      .c-masthead {
+        grid-area: masthead;
+      }
+      .c-main {
+        grid-area: main;
+      }
+      .c-panel {
+        grid-area: panel;
+        z-index: 99; //always above c-main
+      }
+      .c-footer {
+        grid-area: footer;
+      }
     }   
   }
 }

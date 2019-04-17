@@ -1,0 +1,33 @@
+// =======================================================================
+// Panel
+// =======================================================================
+
+.c-panel {
+  background: var(--c-neutral-light);
+  .c-list {
+    display: grid;
+    height: 100vh;
+    .c-list__item {
+      margin-bottom: 0;
+      border-bottom: 1px solid var(--c-neutral-dark-a10);
+      &:last-child {
+        border-bottom: none;
+      }
+      a {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        text-decoration: none;
+        transition: background .3s var(--t-bezier);
+        &:hover {
+          background: white;
+        }
+        h5 {
+          margin-bottom: var(--u-spacer);
+        }
+      }
+    }
+  }  
+}
