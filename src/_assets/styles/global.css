@@ -10,7 +10,8 @@
   --c-neutral-light-a40: hsla(60, 19%, 95%, 40%);
   --c-neutral-light-a20: hsla(60, 19%, 95%, 20%);
   --c-neutral-light-a10: hsla(60, 19%, 95%, 10%);
-  --f-family-sans: neue-haas-unica, "BlinkMacSystemFont", -apple-system, "Helvetica Neue", Helvetica, sans-serif;
+  --f-family-sans: neue-haas-unca, covik-sans, "BlinkMacSystemFont", -apple-system, "Helvetica Neue", Helvetica, sans-serif;
+  --f-family-serif: ohno-blazeface, Georgia, serif;
   --f-size-body: calc(1rem + 0.425vmin);
   --f-size-body-small: calc(1rem - 0.25vmin);
   --f-size-body-large: 1.125rem;
@@ -79,11 +80,6 @@
   .o-flex--ac {
     align-items: center; }
 
-/*.c-page {
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 70em;   
-}*/
 html {
   box-sizing: border-box;
   -ms-text-size-adjust: 100%;
@@ -202,6 +198,7 @@ body {
 h1 {
   margin-bottom: var(--u-spacer-15);
   font-family: var(--f-family-serif);
+  font-weight: 200;
   font-size: var(--f-size-h1);
   line-height: var(--f-leading-tight); }
 
@@ -268,7 +265,8 @@ cite {
         .c-panel .c-list .c-list__item a:hover {
           background: white; }
         .c-panel .c-list .c-list__item a h5 {
-          margin-bottom: var(--u-spacer); }
+          margin-bottom: var(--u-spacer);
+          font-weight: 500; }
 
 .c-section {
   margin-bottom: var(--u-spacer-50); }
