@@ -16,7 +16,7 @@
   --f-size-body-small: 0.875rem;
   --f-size-h1: calc(2.5rem + 1.45vw);
   --f-size-h2: calc(1.25rem + 0.75vw);
-  --f-size-h3: calc(1.75rem + 0.25vw);
+  --f-size-h3: calc(1.6rem + 0.25vw);
   --f-size-h4: calc(1.125rem + 0.25vw);
   --f-size-blockquote: var(--f-size-h3);
   --f-leading-tight: 1.25em;
@@ -36,6 +36,7 @@
   --u-layout-column: 10fr;
   --u-layout-gap-small: 3vw;
   --u-layout-gap: 5vw;
+  --u-layout-gutter: 4vw;
   --u-layout-viewport-medium: 44em;
   --u-layout-viewport-large: 80em;
   --u-layout-viewport-largest: 90em;
@@ -75,12 +76,10 @@
           position: absolute;
           max-width: 43rem; }
           .o-grid--index .c-main .c-article--case {
-            max-width: 55rem; }
+            flex-direction: column-reverse;
+            max-width: calc(100% - var(--u-layout-gutter)); }
             .o-grid--index .c-main .c-article--case .c-article__header {
-              position: absolute;
-              max-width: 43rem; }
-            .o-grid--index .c-main .c-article--case .c-figure {
-              margin-left: -6vw; }
+              max-width: 30rem; }
       .o-grid--index .c-panel {
         grid-area: panel;
         z-index: 99; }
@@ -246,10 +245,10 @@ cite {
   font-style: normal; }
 
 .c-page {
-  padding: 0 4vw; }
+  padding: 0 var(--u-layout-gutter); }
   @media (min-width: 44em) {
     .c-page {
-      padding-left: 4vw;
+      padding-left: var(--u-layout-gutter);
       padding-right: 0; } }
 
 .c-panel .c-list {
@@ -286,8 +285,21 @@ cite {
   .c-section--cases {
     margin-bottom: 0; }
 
+.c-article--case .c-article__header {
+  margin-bottom: var(--u-spacer-40);
+  text-align: center; }
+  .c-article--case .c-article__header p {
+    font-size: var(--f-size-body-fixed);
+    line-height: var(--f-leading-tight); }
+
 .c-article--case .c-figure {
   margin: 0; }
+
+@media (min-width: 44em) {
+  .c-article--case .c-article__header {
+    margin-bottom: 0; }
+  .c-article--case .c-figure {
+    margin-bottom: var(--u-spacer-40); } }
 
 .c-main .c-article[role="content__pitch"] {
   display: none; }

@@ -26,7 +26,7 @@
 
   --f-size-h1: calc(2.5rem + 1.45vw); //needs to be much bigger at larger vwprts
   --f-size-h2: calc(1.25rem + 0.75vw);
-  --f-size-h3: calc(1.75rem + 0.25vw);
+  --f-size-h3: calc(1.6rem + 0.25vw);
   --f-size-h4: calc(1.125rem + 0.25vw);
   --f-size-blockquote: var(--f-size-h3);
 
@@ -51,6 +51,8 @@
   --u-layout-column: 10fr;
   --u-layout-gap-small: 3vw;
   --u-layout-gap: 5vw;
+
+  --u-layout-gutter: 4vw;
 
   --u-layout-viewport-medium: 44em; //704px
   --u-layout-viewport-large: 80em; //1280px

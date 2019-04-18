@@ -7,8 +7,8 @@
     {% for case in cases limit:1 %}
     <article class="c-article c-article--case" role="content__case--{{ case.label }}">
       <header class="c-article__header">
-        <h1>{{ case.name }}</h1>
-        <h2>{{ case.description }}</h2>
+        <h3>{{ case.name }}</h3>
+        <p>{{ case.description }}</p>
       </header>
       <figure class="c-figure">
         <img src="{{ case.cover }}" alt="{{ case.name }} &mdash; {{ case.description }}">

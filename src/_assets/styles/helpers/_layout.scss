@@ -41,13 +41,11 @@
           position: absolute;
           max-width: 43rem; //50vw?
           &--case {
-            max-width: 55rem;
+            flex-direction: column-reverse;
+            //max-width: 55rem;
+            max-width: calc(100% - var(--u-layout-gutter));
             .c-article__header {
-              position: absolute;
-              max-width: 43rem; //50vw?
-            }
-            .c-figure {
-              margin-left: -6vw; //?
+              max-width: 30rem; //50vw?
             }
           }
         }

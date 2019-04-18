@@ -1,7 +1,7 @@
 <aside class="c-panel" role="projects">
   <ul class="c-list">
     {% for case in cases %}
-    <li class="c-list__item c-list__item--{{ case.label }}"><a href="#"><b>{{ case.label }}</b><small>{{ case.role }}</small></a></li>
+    <li class="c-list__item c-list__item--{{ case.label }}"><a href="#"><b>{{ case.name }}</b><small>{{ case.role }}</small></a></li>
     {% endfor %}
   </ul>
 </aside>
