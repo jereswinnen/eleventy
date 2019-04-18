@@ -3,9 +3,8 @@
 // =======================================================================
 
 .c-masthead {
-  //margin: var(--u-spacer-40) 0;
   .c-masthead__brand {
-    margin-right: var(--u-spacer-15);
+    margin-bottom: var(--u-spacer-10);
     height: 22px;
     a {
       svg {
@@ -16,6 +15,12 @@
       &:hover svg {
         opacity: .7;
       }
+    }
+  }
+  @media(min-width: 44em) {
+    .c-masthead__brand {
+      margin-bottom: 0;
+      margin-right: calc(var(--u-spacer-15) + 0.75vmin);
     }
   }
 }

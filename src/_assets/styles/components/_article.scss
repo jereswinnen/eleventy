@@ -3,11 +3,19 @@
 // =======================================================================
 
 .c-article {
-  background: wheat; //debug
   .c-article__header {
-    background: green; //debug   
+    //background: green; //debug  
   }
   &--case {
+    .c-article__header {
+      //background: hsla(0, 0%, 100%, .8);
+      //background: hsla(0, 0%, 0%, .8);
+      //-webkit-backdrop-filter: saturate(1.8) blur(20px);
+      
+    }
+    .c-article__header h1, .c-article__header h2 {
+      //text-shadow: ;
+    }
     .c-figure {
       margin: 0;
     }
@@ -15,7 +23,7 @@
 }
 
 .c-main .c-article[role="content__pitch"] {
-  //display: none;
+  display: none;
   //opacity: 0;
   //pointer-events: none;
 }

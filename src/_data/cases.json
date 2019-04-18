@@ -1,5 +1,12 @@
 [
    {
+      "label": "scorecard",
+      "name": "Scorecard",
+      "description": "Keeping score while playing games with friends and family has never been so seamless.",
+      "role": "Web, iOS, Branding",
+      "cover": "https://res.cloudinary.com/matter/image/upload/v1555592654/scorecard__cover--constrained%402x.png"
+   },
+   {
       "label": "shelf",
       "name": "Shelf",
       "description": "An app for power users who work with documents on a daily basis.",
@@ -25,13 +32,6 @@
       "name": "Realo",
       "description": "Building a next generation real estate platform.",
       "role": "Web, iOS, Android",
-      "cover": "https://images.unsplash.com/photo-1548502567-d6f175c4808f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80"
-   },
-   {
-      "label": "scorecard",
-      "name": "Scorecard",
-      "description": "To be defined",
-      "role": "Web, iOS, Branding",
       "cover": "https://images.unsplash.com/photo-1548502567-d6f175c4808f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80"
    },
    {

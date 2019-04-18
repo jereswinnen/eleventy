@@ -10,8 +10,6 @@
   --c-neutral-dark-a20: hsla(240, 3%, 7%, 20%);
   --c-neutral-dark-a10: hsla(240, 3%, 7%, 10%);
 
-  --c-neutral-mid: hsla(240, 2%, 16%, 1);
-
   --c-neutral-light: hsla(60, 19%, 95%, 1);
   --c-neutral-light-a50: hsla(60, 19%, 95%, 50%);
   --c-neutral-light-a40: hsla(60, 19%, 95%, 40%);
@@ -19,18 +17,17 @@
   --c-neutral-light-a10: hsla(60, 19%, 95%, 10%);
 
   /// Typography
-  --f-family-sans: neue-haas-unca, covik-sans, "BlinkMacSystemFont", -apple-system, "Helvetica Neue", Helvetica, sans-serif;
+  --f-family-sans: covik-sans, neue-haas-unica, "BlinkMacSystemFont", -apple-system, "Helvetica Neue", Helvetica, sans-serif;
   --f-family-serif: ohno-blazeface, Georgia, serif;
 
   --f-size-body: calc(1rem + 0.425vmin);
-  --f-size-body-small: calc(1rem - 0.25vmin);
-  --f-size-body-large: 1.125rem; //18px base size
+  --f-size-body-fixed: 1rem;
+  --f-size-body-small: 0.875rem;
 
   --f-size-h1: calc(2.5rem + 1.45vw); //needs to be much bigger at larger vwprts
   --f-size-h2: calc(1.25rem + 0.75vw);
   --f-size-h3: calc(1.75rem + 0.25vw);
   --f-size-h4: calc(1.125rem + 0.25vw);
-  --f-size-h5: 0.75rem;
   --f-size-blockquote: var(--f-size-h3);
 
   --f-leading-tight: 1.25em;
@@ -64,6 +61,6 @@
   --t-delay: 80ms;
 
   /// Depth
-  //--d-layer-one: 0 1px 5px transparentize($color: var(--c-main-darkest), $amount: 0.9), 0 12px 30px transparentize($color: var(--c-main-darkest), $amount: 0.82);
+  --d-layer-one: 0 1px 5px transparentize($color: var(--c-neutral-dark), $amount: 0.9), 0 12px 30px transparentize($color: var(--c-neutral-dark), $amount: 0.82);
   --d-layer-two: 0 1px 10px rgba(0, 0, 0, .1), 0 12px 35px rgba(0, 0, 0, .15);
 }

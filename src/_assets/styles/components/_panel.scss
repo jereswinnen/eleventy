@@ -3,7 +3,7 @@
 // =======================================================================
 
 .c-panel {
-  background: var(--c-neutral-light);
+  //background: var(--c-neutral-light);
   .c-list {
     display: grid;
     height: 100vh;
@@ -22,13 +22,21 @@
         text-decoration: none;
         transition: background .3s var(--t-bezier);
         &:hover {
-          background: white;
+          //background: white;
+          background: var(--c-neutral-light);
         }
-        h5 {
-          margin-bottom: var(--u-spacer);
+        b {
           font-weight: 500;
+          text-transform: uppercase;
+          letter-spacing: var(--f-spacing-extended)
+        }
+        small {
+          color: var(--c-neutral-dark-a50);
         }
       }
     }
-  }  
+  }
+  @media(min-width: 44em) {
+    border-left: 1px solid var(--c-neutral-dark-a10);
+  } 
 }

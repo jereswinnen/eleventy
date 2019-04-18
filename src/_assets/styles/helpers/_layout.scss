@@ -5,7 +5,16 @@
 .o-grid {
   display: grid;
   &--index {
-
+    grid-auto-rows: minmax(140px, auto);
+    .c-masthead {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .c-footer {
+      display: flex;
+      align-items: center;
+    }
   }
   @media(min-width: 44em) {
     &--index {
@@ -16,9 +25,11 @@
         "main panel"
         "footer panel";
       height: 100vh;
-      .c-masthead, .c-main, .c-section--cases, .c-section--cases .c-article--case, .c-footer {
+      .c-masthead, .c-main, .c-section--cases, .c-section--cases .c-article--case {
         display: flex;
+        flex-direction: row;
         align-items: center;
+        justify-content: flex-start;
       }
       .c-masthead {
         grid-area: masthead;
@@ -26,14 +37,17 @@
       .c-main {
         position: relative;
         grid-area: main;
-        background: salmon; //debug
         .c-article {
           position: absolute;
-          max-width: 43rem; //50vw
+          max-width: 43rem; //50vw?
           &--case {
-            max-width: 43rem; //50vw //possibly wider?
+            max-width: 55rem;
             .c-article__header {
               position: absolute;
+              max-width: 43rem; //50vw?
+            }
+            .c-figure {
+              margin-left: -6vw; //?
             }
           }
         }

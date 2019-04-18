@@ -4,7 +4,7 @@
   </article>
   {% if type == 'index' %}
   <section class="c-section c-section--cases" role="case-studies">
-    {% for case in cases limit:2 %}
+    {% for case in cases limit:1 %}
     <article class="c-article c-article--case" role="content__case--{{ case.label }}">
       <header class="c-article__header">
         <h1>{{ case.name }}</h1>
