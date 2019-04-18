@@ -244,6 +244,13 @@ blockquote {
 cite {
   font-style: normal; }
 
+.c-page {
+  padding: 0 4vw; }
+  @media (min-width: 44em) {
+    .c-page {
+      padding-left: 4vw;
+      padding-right: 0; } }
+
 .c-panel {
   background: var(--c-neutral-light); }
   .c-panel .c-list {
