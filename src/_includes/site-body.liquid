@@ -4,15 +4,15 @@
   </article>
   {% if type == 'index' %}
   <section class="c-section c-section--cases" role="case-studies">
-    {% for case in cases limit:1 %}
+    {% for case in cases limit:6 %}
     <article class="c-article c-article--case" role="content__case--{{ case.label }}">
+      <figure class="c-figure">
+        <img src="{{ case.cover }}" alt="{{ case.name }} &mdash; {{ case.description }}">
+      </figure>
       <header class="c-article__header">
         <h3>{{ case.name }}</h3>
         <p>{{ case.description }}</p>
       </header>
-      <figure class="c-figure">
-        <img src="{{ case.cover }}" alt="{{ case.name }} &mdash; {{ case.description }}">
-      </figure>
     </article>
     {% endfor %}
   </section>

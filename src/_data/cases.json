@@ -7,45 +7,38 @@
       "cover": "https://res.cloudinary.com/matter/image/upload/v1555592654/scorecard__cover--constrained%402x.png"
    },
    {
-      "label": "shelf",
-      "name": "Shelf",
-      "description": "An app for power users who work with documents on a daily basis.",
-      "role": "Web, iOS, Branding",
-      "cover": "https://images.unsplash.com/photo-1544368347-74092989cdcb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3597&q=80"
-   },
-   {
-      "label": "helpper",
-      "name": "Helpper",
-      "description": "To be defined",
-      "role": "iOS",
-      "cover": "https://images.unsplash.com/photo-1550613097-fe6c2c321cd3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3465&q=80"
-   },
-   {
       "label": "diabetik",
       "name": "Diabetik",
       "description": "Elegant diabetes management at your fingertips.",
       "role": "Web, iOS",
-      "cover": "https://images.unsplash.com/photo-1548502567-d6f175c4808f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80"
+      "cover": "https://res.cloudinary.com/matter/image/upload/v1555618020/diabetikrev__cover--constrained-alt%402x.png"
+   },
+   {
+      "label": "shelf",
+      "name": "Shelf",
+      "description": "An app for power users who work with documents on a daily basis.",
+      "role": "Web, iOS, Branding",
+      "cover": "https://res.cloudinary.com/matter/image/upload/v1555617849/shelf__cover--constrained%402x.png"
+   },
+   {
+      "label": "helpper",
+      "name": "Helpper",
+      "description": "Helpper allows you to connect with people in your neighbourhood who are in need of a helping hand.",
+      "role": "iOS",
+      "cover": "https://res.cloudinary.com/matter/image/upload/v1555620883/helpper__cover--constrained%402x.png"
    },
    {
       "label": "realo",
       "name": "Realo",
       "description": "Building a next generation real estate platform.",
       "role": "Web, iOS, Android",
-      "cover": "https://images.unsplash.com/photo-1548502567-d6f175c4808f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80"
-   },
-   {
-      "label": "hocusfocus",
-      "name": "Hocus Focus",
-      "description": "To be defined",
-      "role": "Web, macOS, Branding",
-      "cover": "https://images.unsplash.com/photo-1548502567-d6f175c4808f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80"
+      "cover": "https://res.cloudinary.com/matter/image/upload/v1555618894/realo__cover--constrained%402x.png"
    },
    {
       "label": "immobrown",
       "name": "Immo Brown",
       "description": "An elegant new website for an exclusive real estate agent.",
       "role": "Web",
-      "cover": "https://images.unsplash.com/photo-1548502567-d6f175c4808f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80"
+      "cover": "https://res.cloudinary.com/matter/image/upload/v1555619993/immobrown__cover--constrained%402x.png"
    }
 ]
