@@ -4,7 +4,7 @@
 
 .c-masthead {
   .c-masthead__brand {
-    margin-bottom: var(--u-spacer-10);
+    margin-bottom: var(--u-spacer-20);
     height: 22px;
     a {
       svg {
@@ -17,7 +17,7 @@
       }
     }
   }
-  @media(min-width: 44em) {
+  @media(min-width: 46em) {
     .c-masthead__brand {
       margin-bottom: 0;
       margin-right: calc(var(--u-spacer-15) + 0.75vmin);

@@ -36,8 +36,8 @@
   --u-layout-column: 10fr;
   --u-layout-gap-small: 3vw;
   --u-layout-gap: 5vw;
-  --u-layout-gutter: 4vw;
-  --u-layout-viewport-medium: 44em;
+  --u-layout-gutter: 5vw;
+  --u-layout-viewport-medium: 46em;
   --u-layout-viewport-large: 80em;
   --u-layout-viewport-largest: 90em;
   --t-bezier: cubic-bezier(.165, .84, .44, 1);
@@ -49,7 +49,7 @@
   display: grid; }
   .o-grid--index {
     grid-template-columns: 1fr;
-    grid-auto-rows: minmax(140px, auto);
+    grid-auto-rows: minmax(18vh, auto);
     grid-template-areas: none; }
     .o-grid--index .c-masthead {
       display: flex;
@@ -60,10 +60,10 @@
     .o-grid--index .c-footer {
       display: flex;
       align-items: center; }
-  @media (min-width: 44em) {
+  @media (min-width: 46em) {
     .o-grid--index {
-      grid-template-columns: minmax(940px, 3.5fr) 1fr;
-      grid-template-rows: 120px 4fr 120px;
+      grid-template-columns: 3fr 1fr;
+      grid-template-rows: minmax(14vh, auto) 4fr minmax(14vh, auto);
       grid-template-areas: "masthead panel" "main panel" "footer panel";
       height: 100vh; }
       .o-grid--index .c-masthead, .o-grid--index .c-main, .o-grid--index .c-section--cases, .o-grid--index .c-section--cases .c-article--case {
@@ -78,12 +78,13 @@
         grid-area: main; }
         .o-grid--index .c-main .c-article {
           position: absolute;
-          max-width: 43rem; }
+          max-width: calc(100% - var(--u-layout-gutter)); }
           .o-grid--index .c-main .c-article--case {
-            flex-direction: column;
-            max-width: calc(100% - var(--u-layout-gutter)); }
+            flex-direction: column; }
             .o-grid--index .c-main .c-article--case .c-article__header {
               max-width: 30rem; }
+      .o-grid--index .c-main .c-section--cases {
+        display: none; }
       .o-grid--index .c-panel {
         display: block;
         grid-area: panel;
@@ -251,7 +252,7 @@ cite {
 
 .c-page {
   padding: 0 var(--u-layout-gutter); }
-  @media (min-width: 44em) {
+  @media (min-width: 46em) {
     .c-page {
       padding-left: var(--u-layout-gutter);
       padding-right: 0; } }
@@ -290,20 +291,33 @@ cite {
   .c-section--cases {
     margin-bottom: 0; }
 
-.c-article--case {
-  margin-bottom: var(--u-spacer-60); }
-  .c-article--case:last-child {
-    margin-bottom: 0; }
-  .c-article--case .c-article__header p {
-    font-size: var(--f-size-body-fixed);
-    line-height: var(--f-leading-tight); }
-  .c-article--case .c-figure {
-    margin-bottom: var(--u-spacer-20); }
-  @media (min-width: 44em) {
+.c-article {
+  margin-bottom: var(--u-spacer-40); }
+  .c-article[role="content__pitch"] {
+    margin-bottom: var(--u-spacer-80); }
+  .c-article--case {
+    margin-bottom: var(--u-spacer-60); }
+    .c-article--case:last-child {
+      margin-bottom: 0; }
+    .c-article--case .c-article__header p {
+      font-size: var(--f-size-body-fixed);
+      line-height: var(--f-leading-tight); }
+    .c-article--case .c-figure {
+      margin-bottom: var(--u-spacer-20); }
+  @media (min-width: 40em) {
+    .c-article {
+      margin-bottom: var(--u-spacer-60); }
+      .c-article[role="content__pitch"] {
+        margin-bottom: var(--u-spacer-100); }
+      .c-article--case {
+        margin-bottom: var(--u-spacer-80); }
+        .c-article--case .c-article__header {
+          max-width: 30rem; } }
+  @media (min-width: 46em) {
+    .c-article[role="content__pitch"] {
+      margin-bottom: 0; }
     .c-article--case {
       margin-bottom: 0; }
-      .c-article--case .c-article__header {
-        text-align: center; }
       .c-article--case .c-figure {
         margin-bottom: var(--u-spacer-40); } }
 
@@ -311,7 +325,7 @@ cite {
   color: var(--c-neutral-dark-a50); }
 
 .c-masthead .c-masthead__brand {
-  margin-bottom: var(--u-spacer-10);
+  margin-bottom: var(--u-spacer-20);
   height: 22px; }
   .c-masthead .c-masthead__brand a svg {
     width: 124px;
@@ -320,7 +334,7 @@ cite {
   .c-masthead .c-masthead__brand a:hover svg {
     opacity: .7; }
 
-@media (min-width: 44em) {
+@media (min-width: 46em) {
   .c-masthead .c-masthead__brand {
     margin-bottom: 0;
     margin-right: calc(var(--u-spacer-15) + 0.75vmin); } }
