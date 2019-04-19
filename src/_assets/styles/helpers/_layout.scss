@@ -5,11 +5,16 @@
 .o-grid {
   display: grid;
   &--index {
+    grid-template-columns: 1fr;
     grid-auto-rows: minmax(140px, auto);
+    grid-template-areas: none;
     .c-masthead {
       display: flex;
       flex-direction: column;
       justify-content: center;
+    }
+    .c-panel {
+      display: none;
     }
     .c-footer {
       display: flex;
@@ -51,6 +56,7 @@
         }
       }
       .c-panel {
+        display: block;
         grid-area: panel;
         z-index: 99; //always above c-main
       }

@@ -8,6 +8,9 @@
   }
   &--case {
     margin-bottom: var(--u-spacer-60);
+    &:last-child {
+      margin-bottom: 0;
+    }
     .c-article__header {
       //text-align: center;
       p {
