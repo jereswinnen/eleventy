@@ -5,12 +5,14 @@
 :root {
   /// Colour
   --c-neutral-dark: hsla(240, 3%, 7%, 1);
+  --c-neutral-dark-a60: hsla(240, 3%, 7%, 60%);
   --c-neutral-dark-a50: hsla(240, 3%, 7%, 50%);
   --c-neutral-dark-a40: hsla(240, 3%, 7%, 40%);
   --c-neutral-dark-a20: hsla(240, 3%, 7%, 20%);
   --c-neutral-dark-a10: hsla(240, 3%, 7%, 10%);
 
   --c-neutral-light: hsla(60, 19%, 95%, 1);
+  --c-neutral-light-a60: hsla(60, 19%, 95%, 60%);
   --c-neutral-light-a50: hsla(60, 19%, 95%, 50%);
   --c-neutral-light-a40: hsla(60, 19%, 95%, 40%);
   --c-neutral-light-a20: hsla(60, 19%, 95%, 20%);
