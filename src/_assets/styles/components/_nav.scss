@@ -11,18 +11,19 @@
       margin-right: calc(var(--u-spacer-15) + 0.75vmin);
       a {
         font-size: var(--f-size-body-fixed);
-        color: var(--c-neutral-dark-a50);
+        font-weight: 500;
+        color: var(--c-neutral-dark);
+        text-transform: lowercase;
         text-decoration: none;
         &:hover {
-          color: var(--c-neutral-dark);
+          text-decoration: underline;
         }
       }
       &:last-child {
         margin-right: 0;
       }
       &.c-nav__item--selected a {
-        font-weight: 500;
-        color: var(--c-neutral-dark);
+        color: #7B0046;
       }
     }
   }

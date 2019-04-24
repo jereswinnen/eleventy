@@ -1,7 +1,4 @@
 ---
-layout: layouts/case
-type: case
-permalink: /work/helpper/index.html
 title: Helpper
 role: UI design, UX design, and icon design.
 year: 2018-2019

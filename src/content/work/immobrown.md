@@ -1,7 +1,4 @@
 ---
-layout: layouts/case
-type: case
-permalink: /work/immobrown/index.html
 title: Immo Brown
 role: Web design, user experience design, and icon design.
 year: 2016

@@ -1,7 +1,4 @@
 ---
-layout: layouts/case
-type: case
-permalink: /work/shelf/index.html
 title: Shelf for iPad
 role: Web design & development, UI design, UX design, and icon design.
 year: 2017

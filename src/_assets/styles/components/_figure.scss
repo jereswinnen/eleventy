@@ -7,7 +7,12 @@
   img {
     display: block;
   }
-  figcaption {
+  .c-figure__caption {
+    margin-top: var(--u-spacer-15);
     color: currentColor;
   }
+}
+.c-figure--contained {
+  padding: 2vmax;
+  background: var(--c-neutral-light);
 }

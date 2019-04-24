@@ -18,11 +18,13 @@
   --c-neutral-light-a20: hsla(60, 19%, 95%, 20%);
   --c-neutral-light-a10: hsla(60, 19%, 95%, 10%);
 
+  --c-scorecard-accent: hsla(326, 100%, 24%, 1);
+
   /// Typography
   --f-family-sans: covik-sans, neue-haas-unica, "BlinkMacSystemFont", -apple-system, "Helvetica Neue", Helvetica, sans-serif;
   --f-family-serif: ohno-blazeface, Georgia, serif;
 
-  --f-size-body: calc(1rem + 0.425vmin);
+  --f-size-body: calc(1rem + 0.425vmin); //adjust vmin to it doesn't get too big
   --f-size-body-fixed: 1rem;
   --f-size-body-small: 0.875rem;
 
@@ -35,6 +37,7 @@
   --f-leading-tight: 1.25em;
   --f-leading: 1.5em;
 
+  --f-spacing-narrow: -0.016743rem;
   --f-spacing-extended: 0.125rem;
 
   /// Units

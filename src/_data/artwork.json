@@ -21,6 +21,14 @@
          }
       ]
    },
+   "scorecard": {
+      "cover": [
+         {
+            "source": "https://res.cloudinary.com/matter/image/upload/v1555592654/scorecard__cover--constrained%402x.png",
+            "alt": "This is some alt text."
+         }
+      ]
+   },
    "realo": {
       "hero": [
          {

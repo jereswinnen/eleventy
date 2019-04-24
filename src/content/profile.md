@@ -1,5 +1,5 @@
 ---
-layout: layouts/default
+layout: default
 title: Profile
 permalink: /profile/index.html
 type: profile

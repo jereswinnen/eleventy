@@ -1,7 +1,4 @@
 ---
-layout: layouts/case
-type: case
-permalink: /work/diabetik/index.html
 title: Diabetik
 role: Branding, UI design, icon design, and web design.
 year: 2013-2015

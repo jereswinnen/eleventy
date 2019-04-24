@@ -2,7 +2,7 @@
   <article class="c-article" role="content__pitch">
     {{ content }}
   </article>
-  {% if type == 'index' %}
+  {% if layout == 'home' %}
   <section class="c-section c-section--cases" role="case-studies">
     {% for case in cases limit:6 %}
     <article class="c-article c-article--case" role="content__case--{{ case.label }}">

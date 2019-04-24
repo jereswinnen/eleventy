@@ -41,6 +41,9 @@
     }
     &--case {
       margin-bottom: 0;
+      .c-article__header {
+        text-align: center;
+      }
       .c-figure {
         margin-bottom: var(--u-spacer-40);
       }
@@ -52,34 +55,41 @@
   //display: none;
   //opacity: 0;
   //pointer-events: none;
+    //visibility: hidden;
 }
 .c-main .c-section--cases .c-article[role="content__case--helpper"] {
   //display: none;
   //opacity: 0;
   //pointer-events: none;
+    //visibility: hidden;
 }
 .c-main .c-section--cases .c-article[role="content__case--scorecard"] {
   //display: none;
   //opacity: 0;
   //pointer-events: none;
+    //visibility: hidden;
 }
 .c-main .c-section--cases .c-article[role="content__case--shelf"] {
   //display: none;
   //opacity: 0;
   //pointer-events: none;
+    //visibility: hidden;
 }
 .c-main .c-section--cases .c-article[role="content__case--diabetik"] {
   //display: none;
   //opacity: 0;
   //pointer-events: none;
+    //visibility: hidden;
 }
 .c-main .c-section--cases .c-article[role="content__case--immobrown"] {
   //display: none;
   //opacity: 0;
   //pointer-events: none;
+    //visibility: hidden;
 }
 .c-main .c-section--cases .c-article[role="content__case--realo"] {
   //display: none;
   //opacity: 0;
   //pointer-events: none;
+    //visibility: hidden;
 }

@@ -3,12 +3,13 @@
 // =======================================================================
 
 .c-page {
+  margin: 0 auto;
   padding: 0 var(--u-layout-gutter);
-  //margin-left: auto;
-  //margin-right: auto;
-  //max-width: 70em;
-  @media(min-width: 46em) {
-    padding-left: var(--u-layout-gutter);
+  max-width: 55em;
+}
+@media(min-width: 46em) {
+  .o-grid--home.c-page {
     padding-right: 0;
+    max-width: none;
   }
 }

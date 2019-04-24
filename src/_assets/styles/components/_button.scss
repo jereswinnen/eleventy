@@ -1,7 +1,7 @@
 // =======================================================================
 // Primary & secondary calls to action
 // =======================================================================
-.c-button {
+.c-cta {
   padding: var(--u-spacer-10) var(--u-spacer-20);
   color: var(--c-neutral-light);
   background: var(--c-neutral-mid);
@@ -15,9 +15,35 @@
   &:active {
     opacity: .7;
     box-shadow: none;
+    transition: none;
   }
 }
-
-.c-button--small {
-
+.c-cta--text, .c-cta--textreverse {
+  padding: 0;
+  font-weight: 500;
+  color: currentColor;
+  background: none;
+  box-shadow: none;
+  border-radius: none;
+  &:after {
+    padding-left: 3px;
+    content: '\2192';
+    //transition: inherit;
+  }
+  &:hover {
+    background: none;
+    &:after {
+      //padding-left: 8px;
+    }
+  }
+}
+.c-cta--textreverse {
+  &:before {
+    padding-right: 3px;
+    content: '\2190';
+    transform: none; 
+  }
+  &:after {
+    display: none;
+  }
 }

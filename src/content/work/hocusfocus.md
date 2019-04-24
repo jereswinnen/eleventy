@@ -1,7 +1,4 @@
 ---
-layout: layouts/case
-type: case
-permalink: /work/hocusfocus/index.html
 title: Hocus Focus
 role: Web design, UI design, UX design, and icon design.
 year: To be defined

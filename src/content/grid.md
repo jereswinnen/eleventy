@@ -1,5 +1,5 @@
 ---
-layout: layouts/grid
+layout: grid
 title: Grid
 permalink: /grid/index.html
 type: grid

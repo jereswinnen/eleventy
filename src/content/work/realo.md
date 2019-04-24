@@ -1,7 +1,4 @@
 ---
-layout: layouts/case
-type: case
-permalink: /work/realo/index.html
 title: Realo
 summary: Joining this startup as the first designer on the team, my job was to create a design system flexible enough to be used on a variety of platforms.
 url: https://realo.com
